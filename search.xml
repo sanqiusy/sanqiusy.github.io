@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>hexo博客的快速搭建</title>
+    <url>/2024/02/20/hello-world/</url>
+    <content><![CDATA[<p>测试</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初始</title>
+    <url>/2024/02/28/why/</url>
+    <content><![CDATA[<p>评论系统</p>
+]]></content>
+  </entry>
+</search>
