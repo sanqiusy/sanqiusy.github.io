@@ -1,18 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo博客的快速搭建</title>
-    <url>/2024/02/20/hello-world/</url>
-    <content><![CDATA[<p>测试</p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>初始</title>
     <url>/2024/02/28/why/</url>
     <content><![CDATA[<p>评论系统</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>hexo博客文本基本参考</title>
+    <url>/2024/02/20/hello-world/</url>
+    <content><![CDATA[<h2 id="Notes-笔记模块"><a href="#Notes-笔记模块" class="headerlink" title="Notes 笔记模块"></a>Notes 笔记模块</h2><h3 id="大号提示块"><a href="#大号提示块" class="headerlink" title="大号提示块"></a>大号提示块</h3><p>格式：<br>（notel 意思是 note large ，方便记，也可以写成 note-large ）</p>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4>
+  <div class="note-large default">
+    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
+      <i class="notel-icon fa-solid fa-info"></i><p>信息</p>
+
+    </div>
+    <div class="notel-content">
+      <p>换行测试<br>换行测试<br>换行测试</p>
+
+    </div>
+  </div>
+
+  <div class="note-large blue">
+    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
+      <p>提示</p>
+
+    </div>
+    <div class="notel-content">
+      <p>换行测试<br>换行测试<br>换行测试</p>
+
+    </div>
+  </div>
+
+  <div class="note-large red">
+    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
+      <p>自定义标题</p>
+
+    </div>
+    <div class="notel-content">
+      <p>换行测试<br>换行测试<br>换行测试</p>
+
+    </div>
+  </div>
+
+<hr>
+<h3 id="小号提示块"><a href="#小号提示块" class="headerlink" title="小号提示块"></a>小号提示块</h3><p>格式:</p>
+
+  <div class="note p-4 mb-4 rounded-small [样式/颜色] [可选: 自定义图标]">
+    <p>笔记内容</p>
+
+  </div>
+
+<h4 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h4>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>默认 提示块标签</p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>default 提示块标签</p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small primary">
+    <p>primary 提示块标签</p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small success">
+    <p>success 提示块标签</p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>info 提示块标签</p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small warning">
+    <p>warning 提示块标签</p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small danger">
+    <p>danger 提示块标签</p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small red icon-padding">
+    <i class="note-icon fa-solid fa-bolt"></i><p>自定义提示块标签</p>
+
+  </div>
+
+<hr>
+<h2 id="Buttons-按钮模块"><a href="#Buttons-按钮模块" class="headerlink" title="Buttons 按钮模块"></a>Buttons 按钮模块</h2><p>本模块可以添加按钮</p>
+<h3 id="写法"><a href="#写法" class="headerlink" title="写法"></a>写法</h3><a class="button  [可选大小]" href='[url]' title='[名称]'><i class='[可选图标]'></i> [名称]</a>
+
+<p>不设置任何参数的 <a class="button " href='/' title='按钮'>按钮</a> 适合融入段落中。</p>
+<p>regular 按钮适合独立于段落之外：</p>
+<a class="button  regular" href='https://www.ohevan.com' title='示例博客'><i class='fa-solid fa-play-circle'></i> 示例博客</a>
+<a class="button  regular" href='https://www.ohevan.com' title='示例博客'><i class='fa-solid fa-play-circle'></i> 示例博客</a>
+<p>large 按钮更具有强调作用，建议搭配 center 使用：</p>
+<a class="button  center large" href='https://redefine-docs.ohevan.com' title='开始使用'><i class='fa-solid fa-download'></i> 开始使用</a>
+
+<h3 id="变量可选值"><a href="#变量可选值" class="headerlink" title="变量可选值"></a>变量可选值</h3><p>center, regular, large, center large, center regular</p>
+<hr>
+<h2 id="Folding-折叠模块"><a href="#Folding-折叠模块" class="headerlink" title="Folding 折叠模块"></a>Folding 折叠模块</h2><p>可以在这个模块下面嵌套其他模块或者文字，段落等</p>
+<p>本模块部分迁移自 hexo-theme-volantis</p>
+<h3 id="写法-1"><a href="#写法-1" class="headerlink" title="写法"></a>写法</h3><details class="[颜色]" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>[标题] </summary>
+              <div class='content'>
+              <p>需要写的内容 </p>
+              </div>
+            </details>
+
+<h3 id="例子-2"><a href="#例子-2" class="headerlink" title="例子"></a>例子</h3><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 测试： 点击查看更多 </summary>
+              <div class='content'>
+              <p>啊啊啊啊啊</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>danger 提示块标签</p>  </div>   <div class="note p-4 mb-4 rounded-small tip">    <p>tip 提示块标签</p>  </div> 
+              </div>
+            </details>
+
+<h3 id="颜色列表"><a href="#颜色列表" class="headerlink" title="颜色列表"></a>颜色列表</h3><p>yellow, blue, green, red, orange, pink, cyan, white, black, gray</p>
+<hr>
+<h2 id="Tabs-分栏模块"><a href="#Tabs-分栏模块" class="headerlink" title="Tabs 分栏模块"></a>Tabs 分栏模块</h2><p>通过本模块可以在页面中添加多个栏目，用户可以通过点击标签页来切换内容。</p>
+<h3 id="写法-2"><a href="#写法-2" class="headerlink" title="写法"></a>写法</h3><p>使用 Tabs 模块需要在 markdown 中按照以下格式编写：</p>
+<div class="tabs" id="tab-页面内不重复的id"><ul class="nav-tabs"><li class="tab active"><a class="#页面内不重复的id-1">栏目1名称</a></li><li class="tab"><a class="#页面内不重复的id-2">栏目2名称</a></li></ul><div class="tab-content"><div class="tab-pane active" id="页面内不重复的id-1"><p>内容1</p></div><div class="tab-pane" id="页面内不重复的id-2"><p>内容2</p></div></div></div>
+
+<p>其中，页面内不重复的ID 为你为这个选项卡创建的唯一标识符，可以随便取。<br>每个栏目内容使用 <!-- tab 栏目名称 --> 和 <!-- endtab --> 来定义。</p>
+<h3 id="例子-3"><a href="#例子-3" class="headerlink" title="例子"></a>例子</h3><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">First Tab</a></li><li class="tab"><a class="#first-unique-name-2">Second Tab</a></li><li class="tab"><a class="#first-unique-name-3">Third Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p>
+<p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
+<p>This is Tab 3.</p>
+<p>This is Tab 3.</p></div></div></div>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>
