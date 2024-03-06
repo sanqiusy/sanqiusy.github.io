@@ -1,79 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>XXA</title>
-    <url>/2024/03/06/XXA/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>hexo博客快速创建（H1）</title>
-    <url>/2024/02/12/hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BAh1/</url>
-    <content><![CDATA[<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a>
+    <title>hexo博客主题页面参考（H4）</title>
+    <url>/2024/03/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E9%A1%B5%E9%9D%A2%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83h4/</url>
+    <content><![CDATA[<h2 id="说说"><a href="#说说" class="headerlink" title="说说"></a>说说</h2><h3 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h3><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>1、创建说说页面 </summary>
+              <div class="content">
+              <p>页面名字可以选择 shuoshuo 或 essays 或 essay</p><p>在 Hexo 博客根目录执行命令</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>hexo new page essays</p>  </div><p>到此一个名为 essays 的页面就创建完成了</p>
+              </div>
+            </details>
 
-<a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a>
+<hr>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>2、编辑页面名称 </summary>
+              <div class="content">
+              <p>打开 &#x2F;source&#x2F;esssays&#x2F;index.md 文件（根据你所创建的页面名字选择），把 front-matter 里面的 title 属性改成中文的 说说 或者 Essays 。</p><p>由于页面模版默认是根据页面名称匹配的，所以如果你要更改页面名称为其他名字，请在 front-matter 里面加入 type: shuoshuo</p><p>比如</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>title: 测试页面<br>type: shuoshuo<br>date: 2023-03-08 10:38:34</p>  </div>
+              </div>
+            </details>
 
-<a class="button " href="https://hexo.io/zh-cn/" title="Hexo 官网">Hexo 官网</a>
+<hr>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>3、创建说说存放文件 </summary>
+              <div class="content">
+              <p>在博客根目录下的source 目录下面创建文件夹 _data（如果之前没有创建过）</p><p>然后在 _data 目录下面创建文件 essays.yml</p><p>在里面按照此格式写你的说说内容</p>  <div class="note p-4 mb-4 rounded-small danger">    <ul><li><p>content: 第一条说说内容<br>date: 2019-01-01 10:00:00 #说说日期</p></li><li><p>content: 第二条说说内容<br>date: 2019-01-02 10:00:00</p></li></ul>  </div><p>然后访问此页面就可以看见你的说说内容了。</p>
+              </div>
+            </details>
 
-<a class="button " href="https://github.com/" title="Github 官网">Github 官网</a>
-
-<p>域名部署（不做要求）</p>
-<h3 id="一-Git和Nodejs的安装"><a href="#一-Git和Nodejs的安装" class="headerlink" title="一.Git和Nodejs的安装"></a>一.Git和Nodejs的安装</h3><a class="button " href="https://zhuanlan.zhihu.com/p/137448719" title="Git 下载安装">Git 下载安装</a>
-
-<a class="button " href="https://zhuanlan.zhihu.com/p/137445273" title="Nodejs 下载安装">Nodejs 下载安装</a>
-<p>不过，Nodejs因为工作原因经常会切换版本，这里我推荐使用nvm，可以直接管理nodejs的安装和版本切换（建议）</p>
-<h3 id="二-hexo的安装"><a href="#二-hexo的安装" class="headerlink" title="二.hexo的安装"></a>二.hexo的安装</h3><p>1.在自己想要的目录新建一文件夹，文件夹自定义 我这里是在D:\blog_zhangxz\hexoblog文件夹下右键，选择Git Bash Here</p>
-<p>2.使用命令安装Hexo</p>
+<hr>
+<h4 id="写作提示"><a href="#写作提示" class="headerlink" title="写作提示"></a>写作提示</h4><p>说说支持 Markdown 写法。</p>
+<p>如果需要换行，请按照以下写法</p>
 
   <div class="note p-4 mb-4 rounded-small default">
-    <p>npm install hexo-cli -g </p>
+    <ul>
+<li>content: |<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>date: 2019-01-04 10:00:00</li>
+</ul>
 
   </div>
 
-<p>3.安装完成后，输入 hexo -v 输出版本信息</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo -v </p>
-
-  </div>
-
-<p>4.输入hexo init初始化(耐心等待…) 初始化后文件目录下会多出如下图文件和文件夹</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo init </p>
-
-  </div>
-
-<p>5.输入命令 hexo generate可以缩写hexo g 生成HTML页面</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo generate </p>
-
-  </div>
-
-<p>会多出public文件夹如下图，public文件夹内是hexo生成的html文件还有css、js、json</p>
-<p>6.使用命令 hexo server 可缩写hexo s启动服务</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo server </p>
-
-  </div>
-
-<p>7.在浏览器里输入 <a class="link" href="http://localhost:4000/">http://localhost:4000 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 这是默认主题，后面可以在网上下载别人做好的主题进行修改(主题修改不在本章的知识范围)</p>
-<p>可以使用Ctrl+C中断本地服务</p>
-<p>如果你不喜欢这个端口可使用命令hexo server -p 1314指定端口，访问<br><a class="link" href="http://localhost:1314/">http://localhost:1314 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo server -p 1314 </p>
-
-  </div>
-
-<h3 id="三-部署项目到Github远程仓库"><a href="#三-部署项目到Github远程仓库" class="headerlink" title="三.部署项目到Github远程仓库"></a>三.部署项目到Github远程仓库</h3><p>待更新2024&#x2F;3&#x2F;5</p>
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>hexo搭建速成</tag>
+        <tag>hexo主题页面参考</tag>
       </tags>
   </entry>
   <entry>
@@ -157,45 +123,74 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo博客主题页面参考（H4）</title>
-    <url>/2024/03/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E9%A1%B5%E9%9D%A2%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83h4/</url>
-    <content><![CDATA[<h2 id="说说"><a href="#说说" class="headerlink" title="说说"></a>说说</h2><h3 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h3><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>1、创建说说页面 </summary>
-              <div class="content">
-              <p>页面名字可以选择 shuoshuo 或 essays 或 essay</p><p>在 Hexo 博客根目录执行命令</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>hexo new page essays</p>  </div><p>到此一个名为 essays 的页面就创建完成了</p>
-              </div>
-            </details>
+    <title>hexo博客快速创建（H1）</title>
+    <url>/2024/02/12/hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BAh1/</url>
+    <content><![CDATA[<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a>
 
-<hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>2、编辑页面名称 </summary>
-              <div class="content">
-              <p>打开 &#x2F;source&#x2F;esssays&#x2F;index.md 文件（根据你所创建的页面名字选择），把 front-matter 里面的 title 属性改成中文的 说说 或者 Essays 。</p><p>由于页面模版默认是根据页面名称匹配的，所以如果你要更改页面名称为其他名字，请在 front-matter 里面加入 type: shuoshuo</p><p>比如</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>title: 测试页面<br>type: shuoshuo<br>date: 2023-03-08 10:38:34</p>  </div>
-              </div>
-            </details>
+<a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a>
 
-<hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>3、创建说说存放文件 </summary>
-              <div class="content">
-              <p>在博客根目录下的source 目录下面创建文件夹 _data（如果之前没有创建过）</p><p>然后在 _data 目录下面创建文件 essays.yml</p><p>在里面按照此格式写你的说说内容</p>  <div class="note p-4 mb-4 rounded-small danger">    <ul><li><p>content: 第一条说说内容<br>date: 2019-01-01 10:00:00 #说说日期</p></li><li><p>content: 第二条说说内容<br>date: 2019-01-02 10:00:00</p></li></ul>  </div><p>然后访问此页面就可以看见你的说说内容了。</p>
-              </div>
-            </details>
+<a class="button " href="https://hexo.io/zh-cn/" title="Hexo 官网">Hexo 官网</a>
 
-<hr>
-<h4 id="写作提示"><a href="#写作提示" class="headerlink" title="写作提示"></a>写作提示</h4><p>说说支持 Markdown 写法。</p>
-<p>如果需要换行，请按照以下写法</p>
+<a class="button " href="https://github.com/" title="Github 官网">Github 官网</a>
+
+<p>域名部署（不做要求）</p>
+<h3 id="一-Git和Nodejs的安装"><a href="#一-Git和Nodejs的安装" class="headerlink" title="一.Git和Nodejs的安装"></a>一.Git和Nodejs的安装</h3><a class="button " href="https://zhuanlan.zhihu.com/p/137448719" title="Git 下载安装">Git 下载安装</a>
+
+<a class="button " href="https://zhuanlan.zhihu.com/p/137445273" title="Nodejs 下载安装">Nodejs 下载安装</a>
+<p>不过，Nodejs因为工作原因经常会切换版本，这里我推荐使用nvm，可以直接管理nodejs的安装和版本切换（建议）</p>
+<h3 id="二-hexo的安装"><a href="#二-hexo的安装" class="headerlink" title="二.hexo的安装"></a>二.hexo的安装</h3><p>1.在自己想要的目录新建一文件夹，文件夹自定义 我这里是在D:\blog_zhangxz\hexoblog文件夹下右键，选择Git Bash Here</p>
+<p>2.使用命令安装Hexo</p>
 
   <div class="note p-4 mb-4 rounded-small default">
-    <ul>
-<li>content: |<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>date: 2019-01-04 10:00:00</li>
-</ul>
+    <p>npm install hexo-cli -g </p>
 
   </div>
 
+<p>3.安装完成后，输入 hexo -v 输出版本信息</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo -v </p>
+
+  </div>
+
+<p>4.输入hexo init初始化(耐心等待…) 初始化后文件目录下会多出如下图文件和文件夹</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo init </p>
+
+  </div>
+
+<p>5.输入命令 hexo generate可以缩写hexo g 生成HTML页面</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo generate </p>
+
+  </div>
+
+<p>会多出public文件夹如下图，public文件夹内是hexo生成的html文件还有css、js、json</p>
+<p>6.使用命令 hexo server 可缩写hexo s启动服务</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo server </p>
+
+  </div>
+
+<p>7.在浏览器里输入 <a class="link" href="http://localhost:4000/">http://localhost:4000 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 这是默认主题，后面可以在网上下载别人做好的主题进行修改(主题修改不在本章的知识范围)</p>
+<p>可以使用Ctrl+C中断本地服务</p>
+<p>如果你不喜欢这个端口可使用命令hexo server -p 1314指定端口，访问<br><a class="link" href="http://localhost:1314/">http://localhost:1314 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo server -p 1314 </p>
+
+  </div>
+
+<h3 id="三-部署项目到Github远程仓库"><a href="#三-部署项目到Github远程仓库" class="headerlink" title="三.部署项目到Github远程仓库"></a>三.部署项目到Github远程仓库</h3><p>待更新2024&#x2F;3&#x2F;5</p>
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>hexo主题页面参考</tag>
+        <tag>hexo搭建速成</tag>
       </tags>
   </entry>
   <entry>
