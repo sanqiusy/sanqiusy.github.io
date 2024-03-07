@@ -1,48 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo博客主题页面参考（H4）</title>
-    <url>/2024/03/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AEh4/</url>
-    <content><![CDATA[<h2 id="说说"><a href="#说说" class="headerlink" title="说说"></a>说说</h2><h3 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h3><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>1、创建说说页面 </summary>
-              <div class="content">
-              <p>页面名字可以选择 shuoshuo 或 essays 或 essay</p><p>在 Hexo 博客根目录执行命令</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>hexo new page essays</p>  </div><p>到此一个名为 essays 的页面就创建完成了</p>
-              </div>
-            </details>
-
-<hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>2、编辑页面名称 </summary>
-              <div class="content">
-              <p>打开 &#x2F;source&#x2F;esssays&#x2F;index.md 文件（根据你所创建的页面名字选择），把 front-matter 里面的 title 属性改成中文的 说说 或者 Essays 。</p><p>由于页面模版默认是根据页面名称匹配的，所以如果你要更改页面名称为其他名字，请在 front-matter 里面加入 type: shuoshuo</p><p>比如</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>title: 测试页面<br>type: shuoshuo<br>date: 2023-03-08 10:38:34</p>  </div>
-              </div>
-            </details>
-
-<hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>3、创建说说存放文件 </summary>
-              <div class="content">
-              <p>在博客根目录下的source 目录下面创建文件夹 _data（如果之前没有创建过）</p><p>然后在 _data 目录下面创建文件 essays.yml</p><p>在里面按照此格式写你的说说内容</p>  <div class="note p-4 mb-4 rounded-small danger">    <ul><li><p>content: 第一条说说内容<br>date: 2019-01-01 10:00:00 #说说日期</p></li><li><p>content: 第二条说说内容<br>date: 2019-01-02 10:00:00</p></li></ul>  </div><p>然后访问此页面就可以看见你的说说内容了。</p>
-              </div>
-            </details>
-
-<hr>
-<h4 id="写作提示"><a href="#写作提示" class="headerlink" title="写作提示"></a>写作提示</h4><p>说说支持 Markdown 写法。</p>
-<p>如果需要换行，请按照以下写法</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <ul>
-<li>content: |<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>date: 2019-01-04 10:00:00</li>
-</ul>
-
-  </div>
-
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo主题页面参考</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo博客快速创建（H1）</title>
     <url>/2024/02/12/hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BAh1/</url>
     <content><![CDATA[<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a>
@@ -194,15 +152,45 @@
       </tags>
   </entry>
   <entry>
-    <title>香港城市大学（东莞）教务基本开发流程</title>
-    <url>/2024/03/05/%E6%B8%AF%E5%9F%8E%E5%A4%A7%E6%95%99%E5%8A%A1%E5%9F%BA%E6%9C%AC%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8Bgckf/</url>
-    <content><![CDATA[<p>登录工具:<br><img lazyload src="/images/loading.svg" data-src="/./images/gckf/jwkf02.png" title="01"></p>
+    <title>hexo博客主题页面参考（H4）</title>
+    <url>/2024/03/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AEh4/</url>
+    <content><![CDATA[<h2 id="说说"><a href="#说说" class="headerlink" title="说说"></a>说说</h2><h3 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h3><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>1、创建说说页面 </summary>
+              <div class="content">
+              <p>页面名字可以选择 shuoshuo 或 essays 或 essay</p><p>在 Hexo 博客根目录执行命令</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>hexo new page essays</p>  </div><p>到此一个名为 essays 的页面就创建完成了</p>
+              </div>
+            </details>
+
+<hr>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>2、编辑页面名称 </summary>
+              <div class="content">
+              <p>打开 &#x2F;source&#x2F;esssays&#x2F;index.md 文件（根据你所创建的页面名字选择），把 front-matter 里面的 title 属性改成中文的 说说 或者 Essays 。</p><p>由于页面模版默认是根据页面名称匹配的，所以如果你要更改页面名称为其他名字，请在 front-matter 里面加入 type: shuoshuo</p><p>比如</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>title: 测试页面<br>type: shuoshuo<br>date: 2023-03-08 10:38:34</p>  </div>
+              </div>
+            </details>
+
+<hr>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>3、创建说说存放文件 </summary>
+              <div class="content">
+              <p>在博客根目录下的source 目录下面创建文件夹 _data（如果之前没有创建过）</p><p>然后在 _data 目录下面创建文件 essays.yml</p><p>在里面按照此格式写你的说说内容</p>  <div class="note p-4 mb-4 rounded-small danger">    <ul><li><p>content: 第一条说说内容<br>date: 2019-01-01 10:00:00 #说说日期</p></li><li><p>content: 第二条说说内容<br>date: 2019-01-02 10:00:00</p></li></ul>  </div><p>然后访问此页面就可以看见你的说说内容了。</p>
+              </div>
+            </details>
+
+<hr>
+<h4 id="写作提示"><a href="#写作提示" class="headerlink" title="写作提示"></a>写作提示</h4><p>说说支持 Markdown 写法。</p>
+<p>如果需要换行，请按照以下写法</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <ul>
+<li>content: |<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>date: 2019-01-04 10:00:00</li>
+</ul>
+
+  </div>
+
 ]]></content>
       <categories>
-        <category>开发</category>
+        <category>hexo</category>
       </categories>
       <tags>
-        <tag>教务系统</tag>
+        <tag>hexo主题页面参考</tag>
       </tags>
   </entry>
   <entry>
@@ -341,7 +329,19 @@
   <entry>
     <title>香港城市大学（东莞）教务开发工具配置</title>
     <url>/2024/03/05/%E6%B8%AF%E5%9F%8E%E5%A4%A7%E6%95%99%E5%8A%A1%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AEgcgj/</url>
-    <content><![CDATA[<h2 id="一-软件准备"><a href="#一-软件准备" class="headerlink" title="一.软件准备"></a>一.软件准备</h2><p>准备好下面两个软件：<br><img lazyload src="/images/loading.svg" data-src="/./images/gcgj/gcgj01.jpg" alt="图片" title="g1"></p>
+    <content><![CDATA[<h2 id="一-软件准备"><a href="#一-软件准备" class="headerlink" title="一.软件准备"></a>一.软件准备</h2><p>准备好下面两个软件：<br><img lazyload src="/images/loading.svg" data-src="/./images/gcgj/gcgj01.jpg" alt="图片" title="01"></p>
+]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>教务系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>香港城市大学（东莞）教务基本开发流程</title>
+    <url>/2024/03/05/%E6%B8%AF%E5%9F%8E%E5%A4%A7%E6%95%99%E5%8A%A1%E5%9F%BA%E6%9C%AC%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8Bgckf/</url>
+    <content><![CDATA[<p>登录工具:<br><img lazyload src="/images/loading.svg" data-src="/./images/gckf/jwkf02.png" title="01"></p>
 ]]></content>
       <categories>
         <category>开发</category>
