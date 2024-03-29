@@ -1,45 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo博客主题页面参考（H4）</title>
-    <url>/2024/03/06/hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AEh4/</url>
-    <content><![CDATA[<h2 id="说说"><a href="#说说" class="headerlink" title="说说"></a>说说</h2><h3 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h3><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>1、创建说说页面 </summary>
-              <div class="content">
-              <p>页面名字可以选择 shuoshuo 或 essays 或 essay</p><p>在 Hexo 博客根目录执行命令</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>hexo new page essays</p>  </div><p>到此一个名为 essays 的页面就创建完成了</p>
-              </div>
-            </details>
+    <title>hexo博客快速创建（H1）</title>
+    <url>/2024/02/12/hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BAh1/</url>
+    <content><![CDATA[<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a>
 
-<hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>2、编辑页面名称 </summary>
-              <div class="content">
-              <p>打开 &#x2F;source&#x2F;esssays&#x2F;index.md 文件（根据你所创建的页面名字选择），把 front-matter 里面的 title 属性改成中文的 说说 或者 Essays 。</p><p>由于页面模版默认是根据页面名称匹配的，所以如果你要更改页面名称为其他名字，请在 front-matter 里面加入 type: shuoshuo</p><p>比如</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>title: 测试页面<br>type: shuoshuo<br>date: 2023-03-08 10:38:34</p>  </div>
-              </div>
-            </details>
+<a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a>
 
-<hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>3、创建说说存放文件 </summary>
-              <div class="content">
-              <p>在博客根目录下的source 目录下面创建文件夹 _data（如果之前没有创建过）</p><p>然后在 _data 目录下面创建文件 essays.yml</p><p>在里面按照此格式写你的说说内容</p>  <div class="note p-4 mb-4 rounded-small danger">    <ul><li><p>content: 第一条说说内容<br>date: 2019-01-01 10:00:00 #说说日期</p></li><li><p>content: 第二条说说内容<br>date: 2019-01-02 10:00:00</p></li></ul>  </div><p>然后访问此页面就可以看见你的说说内容了。</p>
-              </div>
-            </details>
+<a class="button " href="https://hexo.io/zh-cn/" title="Hexo 官网">Hexo 官网</a>
 
-<hr>
-<h4 id="写作提示"><a href="#写作提示" class="headerlink" title="写作提示"></a>写作提示</h4><p>说说支持 Markdown 写法。</p>
-<p>如果需要换行，请按照以下写法</p>
+<a class="button " href="https://github.com/" title="Github 官网">Github 官网</a>
+
+<p>域名部署（不做要求）</p>
+<h3 id="一-Git和Nodejs的安装"><a href="#一-Git和Nodejs的安装" class="headerlink" title="一.Git和Nodejs的安装"></a>一.Git和Nodejs的安装</h3><a class="button " href="https://zhuanlan.zhihu.com/p/137448719" title="Git 下载安装">Git 下载安装</a>
+
+<a class="button " href="https://zhuanlan.zhihu.com/p/137445273" title="Nodejs 下载安装">Nodejs 下载安装</a>
+<p>不过，Nodejs因为工作原因经常会切换版本，这里我推荐使用nvm，可以直接管理nodejs的安装和版本切换（建议）</p>
+<h3 id="二-hexo的安装"><a href="#二-hexo的安装" class="headerlink" title="二.hexo的安装"></a>二.hexo的安装</h3><p>1.在自己想要的目录新建一文件夹，文件夹自定义 我这里是在D:\blog_zhangxz\hexoblog文件夹下右键，选择Git Bash Here</p>
+<p>2.使用命令安装Hexo</p>
 
   <div class="note p-4 mb-4 rounded-small default">
-    <ul>
-<li>content: |<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>  说说测试，这是第四个，换行测试<br>date: 2019-01-04 10:00:00</li>
-</ul>
+    <p>npm install hexo-cli -g </p>
 
   </div>
 
+<p>3.安装完成后，输入 hexo -v 输出版本信息</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo -v </p>
+
+  </div>
+
+<p>4.输入hexo init初始化(耐心等待…) 初始化后文件目录下会多出如下图文件和文件夹</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo init </p>
+
+  </div>
+
+<p>5.输入命令 hexo generate可以缩写hexo g 生成HTML页面</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo generate </p>
+
+  </div>
+
+<p>会多出public文件夹如下图，public文件夹内是hexo生成的html文件还有css、js、json</p>
+<p>6.使用命令 hexo server 可缩写hexo s启动服务</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo server </p>
+
+  </div>
+
+<p>7.在浏览器里输入 <a class="link" href="http://localhost:4000/">http://localhost:4000 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 这是默认主题，后面可以在网上下载别人做好的主题进行修改(主题修改不在本章的知识范围)</p>
+<p>可以使用Ctrl+C中断本地服务</p>
+<p>如果你不喜欢这个端口可使用命令hexo server -p 1314指定端口，访问<br><a class="link" href="http://localhost:1314/">http://localhost:1314 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo server -p 1314 </p>
+
+  </div>
+
+<h3 id="三-部署项目到Github远程仓库"><a href="#三-部署项目到Github远程仓库" class="headerlink" title="三.部署项目到Github远程仓库"></a>三.部署项目到Github远程仓库</h3><p>待更新2024&#x2F;3&#x2F;5</p>
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>hexo主题页面参考</tag>
+        <tag>hexo搭建速成</tag>
       </tags>
   </entry>
   <entry>
@@ -113,92 +142,10 @@
 <p>This is Tab 3.</p></div></div></div>
 
 <hr>
-<h2 id="二、博客插件基本控制"><a href="#二、博客插件基本控制" class="headerlink" title="二、博客插件基本控制"></a>二、博客插件基本控制</h2><h2 id="三、博客主题基本配置"><a href="#三、博客主题基本配置" class="headerlink" title="三、博客主题基本配置"></a>三、博客主题基本配置</h2>]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo基本功能设置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo博客快速创建（H1）</title>
-    <url>/2024/02/12/hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BAh1/</url>
-    <content><![CDATA[<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a>
-
-<a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a>
-
-<a class="button " href="https://hexo.io/zh-cn/" title="Hexo 官网">Hexo 官网</a>
-
-<a class="button " href="https://github.com/" title="Github 官网">Github 官网</a>
-
-<p>域名部署（不做要求）</p>
-<h3 id="一-Git和Nodejs的安装"><a href="#一-Git和Nodejs的安装" class="headerlink" title="一.Git和Nodejs的安装"></a>一.Git和Nodejs的安装</h3><a class="button " href="https://zhuanlan.zhihu.com/p/137448719" title="Git 下载安装">Git 下载安装</a>
-
-<a class="button " href="https://zhuanlan.zhihu.com/p/137445273" title="Nodejs 下载安装">Nodejs 下载安装</a>
-<p>不过，Nodejs因为工作原因经常会切换版本，这里我推荐使用nvm，可以直接管理nodejs的安装和版本切换（建议）</p>
-<h3 id="二-hexo的安装"><a href="#二-hexo的安装" class="headerlink" title="二.hexo的安装"></a>二.hexo的安装</h3><p>1.在自己想要的目录新建一文件夹，文件夹自定义 我这里是在D:\blog_zhangxz\hexoblog文件夹下右键，选择Git Bash Here</p>
-<p>2.使用命令安装Hexo</p>
+<h2 id="二、博客插件基本控制"><a href="#二、博客插件基本控制" class="headerlink" title="二、博客插件基本控制"></a>二、博客插件基本控制</h2><h3 id="Mermaid-JS-流程图"><a href="#Mermaid-JS-流程图" class="headerlink" title="Mermaid JS 流程图"></a>Mermaid JS 流程图</h3><p>enable 控制启用、version控制版本</p>
 
   <div class="note p-4 mb-4 rounded-small default">
-    <p>npm install hexo-cli -g </p>
-
-  </div>
-
-<p>3.安装完成后，输入 hexo -v 输出版本信息</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo -v </p>
-
-  </div>
-
-<p>4.输入hexo init初始化(耐心等待…) 初始化后文件目录下会多出如下图文件和文件夹</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo init </p>
-
-  </div>
-
-<p>5.输入命令 hexo generate可以缩写hexo g 生成HTML页面</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo generate </p>
-
-  </div>
-
-<p>会多出public文件夹如下图，public文件夹内是hexo生成的html文件还有css、js、json</p>
-<p>6.使用命令 hexo server 可缩写hexo s启动服务</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo server </p>
-
-  </div>
-
-<p>7.在浏览器里输入 <a class="link" href="http://localhost:4000/">http://localhost:4000 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 这是默认主题，后面可以在网上下载别人做好的主题进行修改(主题修改不在本章的知识范围)</p>
-<p>可以使用Ctrl+C中断本地服务</p>
-<p>如果你不喜欢这个端口可使用命令hexo server -p 1314指定端口，访问<br><a class="link" href="http://localhost:1314/">http://localhost:1314 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo server -p 1314 </p>
-
-  </div>
-
-<h3 id="三-部署项目到Github远程仓库"><a href="#三-部署项目到Github远程仓库" class="headerlink" title="三.部署项目到Github远程仓库"></a>三.部署项目到Github远程仓库</h3><p>待更新2024&#x2F;3&#x2F;5</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo搭建速成</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo博客插件基本参考（H3）</title>
-    <url>/2024/03/05/hexo%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AEh3/</url>
-    <content><![CDATA[<h2 id="Mermaid-JS-流程图"><a href="#Mermaid-JS-流程图" class="headerlink" title="Mermaid JS 流程图"></a>Mermaid JS 流程图</h2><p>enable 控制启用、version控制版本</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>plugins:<br>    …<br>    mermaid: # Mermaid JS<br>    enable: false # enable mermaid or not<br>    version: “9.3.0” # default v9.3.0</p>
+    <p>plugins:<br>…<br>mermaid: # Mermaid JS<br>enable: false # enable mermaid or not<br>version: “9.3.0” # default v9.3.0</p>
 
   </div>
 
@@ -217,44 +164,47 @@
       C-->D;</pre>
 <p>其中，graph 类型可以是 graph、digraph、flowchart、gantt、sequenceDiagram、classDiagram 和 stateDiagram。</p>
 <p>更多语法可以参考 Mermaid JS 官网：<a class="link" href="https://mermaid.js.org/">https://mermaid.js.org/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 。</p>
-<h2 id="All-Minifier-资源压缩"><a href="#All-Minifier-资源压缩" class="headerlink" title="All Minifier 资源压缩"></a>All Minifier 资源压缩</h2><p>Redefine 主题代码中，HTML、CSS、JavaScript、图片等代码文件都是没有打包压缩的。</p>
+<hr>
+<h3 id="All-Minifier-资源压缩"><a href="#All-Minifier-资源压缩" class="headerlink" title="All Minifier 资源压缩"></a>All Minifier 资源压缩</h3><p>Redefine 主题代码中，HTML、CSS、JavaScript、图片等代码文件都是没有打包压缩的。</p>
 <p>如果你想要将这些文件打包压缩，可以使用插件 hexo-all-minifier 来解决，能有效减少网站的加载时间。</p>
 <p>hexo-all-minifier 集成了 html-minifier、clean-css、uglify 和 imagemin，配置简单方便。</p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 安装插件 </summary>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>安装插件 </summary>
               <div class="content">
               <p>在 Hexo 项目根目录下安装 hexo-all-minifier，执行以下命令：</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>npm install hexo-all-minifier</p>  </div>
               </div>
             </details>
 
-<hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 修改配置文件 </summary>
+
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>修改配置文件 </summary>
               <div class="content">
               <p>在 Hexo 站点配置文件 _config.yml 文件中，添加以下配置项：</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>all_minifier: true</p>  </div>
               </div>
             </details>
 
-<h2 id="Mathjax-数学公式"><a href="#Mathjax-数学公式" class="headerlink" title="Mathjax 数学公式"></a>Mathjax 数学公式</h2><p>使用插件 hexo-filter-mathjax 可以在文章中使用 LaTeX 语法书写数学公式。</p>
-<h4 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h4><h3 id="配置方法"><a href="#配置方法" class="headerlink" title="配置方法"></a>配置方法</h3><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 安装插件 </summary>
+<hr>
+<h3 id="Mathjax-数学公式"><a href="#Mathjax-数学公式" class="headerlink" title="Mathjax 数学公式"></a>Mathjax 数学公式</h3><p>使用插件 hexo-filter-mathjax 可以在文章中使用 LaTeX 语法书写数学公式。</p>
+<h4 id="配置方法"><a href="#配置方法" class="headerlink" title="配置方法"></a>配置方法</h4><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>安装插件 </summary>
               <div class="content">
               <p>在 Hexo 项目根目录下安装插件 hexo-filter-mathjax，请执行如下命令。</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>npm install hexo-filter-mathjax</p>  </div>
               </div>
             </details>
 
 <hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 修改配置文件 </summary>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>修改配置文件 </summary>
               <div class="content">
-              <p>在 Hexo 配置文件 _config.yml 最底下增加如下配置。</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>mathjax:<br>  tags: none               # or ‘ams’ or ‘all’<br>  single_dollars: true     # enable single dollar signs as in-line math delimiters<br>  cjk_width: 0.9           # relative CJK char width<br>  normal_width: 0.6        # relative normal (monospace) width<br>  append_css: true         # add CSS to every page<br>  every_page: false        # if true, every page will be rendered by mathjax regardless the <code>mathjax</code> setting in Front-matter of each article</p>  </div>
+              <p>在 Hexo 配置文件 _config.yml 最底下增加如下配置。</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>mathjax:<br>tags: none               # or ‘ams’ or ‘all’<br>single_dollars: true     # enable single dollar signs as in-line math delimiters<br>cjk_width: 0.9           # relative CJK char width<br>normal_width: 0.6        # relative normal (monospace) width<br>append_css: true         # add CSS to every page<br>every_page: false        # if true, every page will be rendered by mathjax regardless the <code>mathjax</code> setting in Front-matter of each article</p>  </div>
               </div>
             </details>
 
 <hr>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 在文章中使用 </summary>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>在文章中使用 </summary>
               <div class="content">
               <p>在文章页添加 mathjax: true 属性，至此，就可以在该页面中写公式了。<br>示例：</p>  <div class="note p-4 mb-4 rounded-small danger">    <hr><p>title: MathJax Test<br>date: 2020-09-12 16:02:07<br>tags: MathJax<br>categories: MathJax<br>mathjax: true</p><hr><p>$$<br>i\hbar\frac{\partial}{\partial t}\psi&#x3D;-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi<br>$$</p>  </div>
               </div>
             </details>
 
-<h2 id="Encrypt-文章加密"><a href="#Encrypt-文章加密" class="headerlink" title="Encrypt 文章加密"></a>Encrypt 文章加密</h2><p>本主题内置 hexo-blog-encrypt 插件，可以对文章进行加密，加密后的文章只有输入正确的密码才能查看。</p>
+<hr>
+<h3 id="Encrypt-文章加密"><a href="#Encrypt-文章加密" class="headerlink" title="Encrypt 文章加密"></a>Encrypt 文章加密</h3><p>本主题内置 hexo-blog-encrypt 插件，可以对文章进行加密，加密后的文章只有输入正确的密码才能查看。</p>
 <p>如果你用 npm 安装了 hexo-blog-encrypt 插件，请执行</p>
 
   <div class="note p-4 mb-4 rounded-small default">
@@ -263,13 +213,44 @@
   </div>
 
 <p>卸载插件，否则会导致主题内置的插件无法正常使用。</p>
-<h3 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h3><p>在文章的 Front-matter 中添加 password 字段，值为密码。</p>
+<h4 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h4><p>在文章的 Front-matter 中添加 password 字段，值为密码。</p>
+<hr>
+<h2 id="三、博客主题基本配置"><a href="#三、博客主题基本配置" class="headerlink" title="三、博客主题基本配置"></a>三、博客主题基本配置</h2><h3 id="日记说说"><a href="#日记说说" class="headerlink" title="日记说说"></a>日记说说</h3><h4 id="本地部署-配置"><a href="#本地部署-配置" class="headerlink" title="本地部署&#x2F;配置"></a>本地部署&#x2F;配置</h4><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>1、创建说说页面 </summary>
+              <div class="content">
+              <p>页面名字可以选择 shuoshuo 或 essays 或 essay</p><p>在 Hexo 博客根目录执行命令</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>hexo new page essays</p>  </div><p>到此一个名为 essays 的页面就创建完成了</p>
+              </div>
+            </details>
+
+<hr>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>2、编辑页面名称 </summary>
+              <div class="content">
+              <p>打开 &#x2F;source&#x2F;esssays&#x2F;index.md 文件（根据你所创建的页面名字选择），把 front-matter 里面的 title 属性改成中文的 说说 或者 Essays 。</p><p>由于页面模版默认是根据页面名称匹配的，所以如果你要更改页面名称为其他名字，请在 front-matter 里面加入 type: shuoshuo</p><p>比如</p>  <div class="note p-4 mb-4 rounded-small danger">    <p>title: 测试页面<br>type: shuoshuo<br>date: 2023-03-08 10:38:34</p>  </div>
+              </div>
+            </details>
+
+<hr>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>3、创建说说存放文件 </summary>
+              <div class="content">
+              <p>在博客根目录下的source 目录下面创建文件夹 _data（如果之前没有创建过）</p><p>然后在 _data 目录下面创建文件 essays.yml</p><p>在里面按照此格式写你的说说内容</p>  <div class="note p-4 mb-4 rounded-small danger">    <ul><li><p>content: 第一条说说内容<br>date: 2019-01-01 10:00:00 #说说日期</p></li><li><p>content: 第二条说说内容<br>date: 2019-01-02 10:00:00</p></li></ul>  </div><p>然后访问此页面就可以看见你的说说内容了。</p>
+              </div>
+            </details>
+
+<hr>
+<h4 id="写作提示"><a href="#写作提示" class="headerlink" title="写作提示"></a>写作提示</h4><p>说说支持 Markdown 写法。</p>
+<p>如果需要换行，请按照以下写法</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <ul>
+<li>content: |<br>说说测试，这是第四个，换行测试<br>说说测试，这是第四个，换行测试<br>说说测试，这是第四个，换行测试<br>说说测试，这是第四个，换行测试<br>date: 2019-01-04 10:00:00</li>
+</ul>
+
+  </div>
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>hexo插件参考</tag>
+        <tag>hexo基本功能设置</tag>
       </tags>
   </entry>
 </search>
