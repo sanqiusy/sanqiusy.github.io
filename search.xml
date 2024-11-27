@@ -3,7 +3,7 @@
   <entry>
     <title>Hexo博客基本功能</title>
     <url>/2024/03/29/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h2 id="一、博客文本基本参考"><a href="#一、博客文本基本参考" class="headerlink" title="一、博客文本基本参考"></a>一、博客文本基本参考</h2><h3 id="Notes-笔记模块"><a href="#Notes-笔记模块" class="headerlink" title="Notes 笔记模块"></a>Notes 笔记模块</h3><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>大号提示块 </summary>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="一、博客文本基本参考"><a href="#一、博客文本基本参考" class="headerlink" title="一、博客文本基本参考"></a>一、博客文本基本参考</h2><h3 id="Notes-笔记模块"><a href="#Notes-笔记模块" class="headerlink" title="Notes 笔记模块"></a>Notes 笔记模块</h3><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>大号提示块 </summary>
               <div class="content">
               <p>格式：</p>  <div class="note p-4 mb-4 rounded-small [样式/颜色] [可选: 自定义图标]">    <p>（notel 意思是 note large ，方便记，也可以写成 note-large ）</p>  </div>
               </div>
@@ -183,9 +183,20 @@
       </tags>
   </entry>
   <entry>
+    <title>PeoPleSoft新生创建步骤</title>
+    <url>/2024/04/16/PeoPleSoft%E6%96%B0%E7%94%9F%E5%88%9B%E5%BB%BA%E6%AD%A5%E9%AA%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <categories>
+        <category>PeoPleSoft</category>
+      </categories>
+      <tags>
+        <tag>系统新生创建步骤</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客快速搭建</title>
     <url>/2024/10/22/Hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a>
 
 <a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a>
 
@@ -253,20 +264,52 @@
       </tags>
   </entry>
   <entry>
-    <title>PeoPleSoft新生创建步骤</title>
-    <url>/2024/04/16/PeoPleSoft%E6%96%B0%E7%94%9F%E5%88%9B%E5%BB%BA%E6%AD%A5%E9%AA%A4/</url>
-    <content><![CDATA[]]></content>
+    <title>个人日记（小恒篇）</title>
+    <url>/2024/04/16/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%8A%9B%E6%81%92%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
+<thead>
+<tr>
+<th><img lazyload src="/images/loading.svg" data-src="/images/x.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/wd.jpg" alt="xz"></th>
+</tr>
+</thead>
+</table>
+<h1 id="偏见"><a href="#偏见" class="headerlink" title="偏见"></a>偏见</h1><p>加速快到无法呼吸，我独自与那个无人知晓的他坐在沙发上，仰望天花板后却知而后晓，低头不语。</p>
+<details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>取次花丛懒回顾，半缘修道半缘君。 </summary>
+              <div class="content">
+              <p>我仓促地从花丛中走过，懒得回头顾盼，这既是因为我的清心寡欲，也是因为曾经拥有过的你。</p>
+              </div>
+            </details>
+<h2 id="无题"><a href="#无题" class="headerlink" title="无题"></a>无题</h2><h2 id="固执"><a href="#固执" class="headerlink" title="固执"></a>固执</h2><h3 id="无奈的列车"><a href="#无奈的列车" class="headerlink" title="无奈的列车"></a>无奈的列车</h3>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>去看外面世界到底多大，我会等一场雨有多大，把往外面都一次冲刷。<br>昨天做了一场梦，我梦见：<br>一个人下了火车，不知何时村里都通了火车，我拿着包和被子往村子里走，在我印象中这就是我的村子，<br>但铺面而来的却是浓浓的烟尘，走在路边的小孩也注意到了我…好像..这几个小孩是刚刚一起从火车上下来的，<br>忽然一声叫喊打乱了我的思绪，哥哥，你怎么不穿鞋啊，这时的我才注意到我光着脚，却没有一点感觉。<br>那个孩子一直跟着我，直到走到一处阁楼，很像我小时村里的一个商铺，那里门开着，<br>不知觉有股力量推着我走到里面去，告诉我那就是我的家，虽然我的心里不这么想，但还是…<br>突然想到那个男孩…嗯？什么男孩，转头发现还是那个男孩，紧紧跟在我身后，我揉了揉眼睛，女孩？？？我顿时感觉到不可思议，这时我发现脚底有什么液体黏糊糊的……<br>（这是…血液的流淌，整片天空都变得血腥，周围的人群用着诡异的眼神看着我）突然一声叫喊惊醒了我<br>（hi，力恒，回来也不打声招呼啊，还是听别人说你回来了，害我找了半天）<br>这时刚刚那种令人寒意才悄然消失，片久我突然意识到，那种感觉太真实了，但愿都只是梦……<br>梦里的都是不愿意想起的回忆，或是难以接受的一切，可能也是映射现实的写照，<br>那天我们一家人坐上了去往他乡的旅途，二爷变得诡异，慌张的情绪表现的淋漓尽致，<br>他拖着我的弟弟，一把接过去的邻居家哥哥，显得我是如此多余又…刺激,！！！梦幻般的驾驶技术，开局就是王炸，车速已经超过240码，堪比高铁的时速已经感受不到周围的变化，转眼即逝的人群和房屋在</p>
+
+  </div>
+<h3 id="无畏的星火"><a href="#无畏的星火" class="headerlink" title="无畏的星火"></a>无畏的星火</h3>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>童话在梦里<br>我不屑在这世间篝火，那点点烛光瞬而忽灭瞬而燃起<br>如同那飞蛾般点缀这遥不可及的你……<br>能选择什么的，我不清楚我到底熟知这否一切，找到你的线索却又不敢见到你，或许只是我的一厢情愿罢了，但我此时的心里却热血沸腾的想着你，心心念念，重梦幻想，难道</p>
+
+  </div>
+<h3 id="无声的反抗"><a href="#无声的反抗" class="headerlink" title="无声的反抗"></a>无声的反抗</h3>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>眼花缭乱的烟火、拥挤的人流和喋喋不休的言谈举止，即使校园内如此热闹的景象也阻止不了我们老师拖堂的脚步，<br>同学们都被这一股毅力所感染，竟没一人做出反抗，或许这就是同学们热爱这一间教室和这一位老师的原因吧（苦笑）<br>酣睡的想象里我逃出了这里，走在那一条视乎没有边界的走廊。</p>
+
+  </div>
+
+
+
+]]></content>
       <categories>
-        <category>PeoPleSoft</category>
+        <category>记录美好</category>
       </categories>
       <tags>
-        <tag>系统新生创建步骤</tag>
+        <tag>记录(小恒)</tag>
       </tags>
   </entry>
   <entry>
     <title>个人日记（小宇篇）</title>
     <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       <categories>
         <category>记录美好</category>
       </categories>
@@ -277,7 +320,7 @@
   <entry>
     <title>个人日记（小雷篇）</title>
     <url>/2024/10/08/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E9%9B%B7%E6%97%A5%E9%B8%A3%EF%BC%89/</url>
-    <content><![CDATA[<table>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
 <thead>
 <tr>
 <th><img lazyload src="/images/loading.svg" data-src="/images/kl-sy03.jpg" alt="xz"></th>
@@ -292,37 +335,17 @@
               <p>风停止了，但是我的感情仍然没有平复。之所以爱意随风起，因为我对你的喜爱是长久以往的。</p>
               </div>
             </details>
-<h2 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h2><h2 id="相知"><a href="#相知" class="headerlink" title="相知"></a>相知</h2><h2 id="知微"><a href="#知微" class="headerlink" title="知微"></a>知微</h2><h2 id="灵犀"><a href="#灵犀" class="headerlink" title="灵犀"></a>灵犀</h2>]]></content>
+<h2 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h2><details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>爱意随风起 风止意难平。 </summary>
+              <div class="content">
+              <p>风停止了，但是我的感情仍然没有平复。之所以爱意随风起，因为我对你的喜爱是长久以往的。</p>
+              </div>
+            </details>
+<h2 id="相知"><a href="#相知" class="headerlink" title="相知"></a>相知</h2><h2 id="知微"><a href="#知微" class="headerlink" title="知微"></a>知微</h2><h2 id="灵犀"><a href="#灵犀" class="headerlink" title="灵犀"></a>灵犀</h2>]]></content>
       <categories>
         <category>记录美好</category>
       </categories>
       <tags>
         <tag>记录(小雷)</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>个人日记（小恒篇）</title>
-    <url>/2024/04/16/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%8A%9B%E6%81%92%EF%BC%89/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th><img lazyload src="/images/loading.svg" data-src="/images/x.jpg" alt="xz"></th>
-<th><img lazyload src="/images/loading.svg" data-src="/images/wd.jpg" alt="xz"></th>
-</tr>
-</thead>
-</table>
-<h1 id="偏见"><a href="#偏见" class="headerlink" title="偏见"></a>偏见</h1><p>加速快到无法呼吸，我独自与那个无人知晓的他坐在沙发上，仰望天花板后却知而后晓，低头不语。</p>
-<details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>取次花丛懒回顾，半缘修道半缘君。 </summary>
-              <div class="content">
-              <p>我仓促地从花丛中走过，懒得回头顾盼，这既是因为我的清心寡欲，也是因为曾经拥有过的你。</p>
-              </div>
-            </details>
-<h2 id="无题"><a href="#无题" class="headerlink" title="无题"></a>无题</h2><h2 id="固执"><a href="#固执" class="headerlink" title="固执"></a>固执</h2>]]></content>
-      <categories>
-        <category>记录美好</category>
-      </categories>
-      <tags>
-        <tag>记录(小恒)</tag>
       </tags>
   </entry>
 </search>
