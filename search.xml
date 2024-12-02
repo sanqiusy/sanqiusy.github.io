@@ -179,7 +179,18 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Hexo基本功能</tag>
+        <tag>Md基本文本书写借鉴</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PeoPleSoft第一次学习</title>
+    <url>/2024/04/16/PeoPleSoft%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <categories>
+        <category>PeoPleSoft</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft项目创建</tag>
       </tags>
   </entry>
   <entry>
@@ -253,14 +264,14 @@
       </tags>
   </entry>
   <entry>
-    <title>个人日记（小宇篇）</title>
-    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
+    <title>关于第一篇博客的创建过程</title>
+    <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       <categories>
-        <category>记录美好</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>记录(小宇)</tag>
+        <tag>创建博客</tag>
       </tags>
   </entry>
   <entry>
@@ -335,14 +346,14 @@
       </tags>
   </entry>
   <entry>
-    <title>PeoPleSoft新生创建步骤</title>
-    <url>/2024/04/16/PeoPleSoft%E6%96%B0%E7%94%9F%E5%88%9B%E5%BB%BA%E6%AD%A5%E9%AA%A4/</url>
+    <title>个人日记（小宇篇）</title>
+    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       <categories>
-        <category>PeoPleSoft</category>
+        <category>记录美好</category>
       </categories>
       <tags>
-        <tag>系统新生创建步骤</tag>
+        <tag>记录(小宇)</tag>
       </tags>
   </entry>
   <entry>
