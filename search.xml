@@ -260,18 +260,32 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Hexo搭建速成</tag>
+        <tag>Hexo博客搭建速成</tag>
       </tags>
   </entry>
   <entry>
     <title>关于第一篇博客的创建过程</title>
     <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&#8195;&#8195;第一次遇博客还是大学的时候，当时班上有个很厉害的编程高手（至少当时那个水平对我们已经非常厉害的 ），每天都鼓捣写些网页和小程序。<br>&#8195;&#8195;直到某一天他在朋友圈发布了一个链接，介绍是他写的一篇博客，里面有很多他写的代码和记录，还有那华丽的色彩和特效深深的吸引着我，真的很酷，从那一天我就萌生写一篇博客的想法。</p>
+<h3 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h3><p>&#8195;&#8195;为什么要写博客，其实这个问题大部分人都知道自己的标准答案，就比如我，前言已经很清楚了，不过后来写着写着发生了一些变化，不再满足自己写的东西只有那么短短几篇，转化成了一种记录。<br>&#8195;&#8195;翻了一下记录，我的博客建站只有短短不到一年的时间，虽然这已经不是我的第一篇博客，但上一个因为各种原因被废弃掉了，其实总共也就一年零两个月。<br>&#8195;&#8195;记得那时作为一个初入职场的小菜鸟有许多问题、资料都要在网上查找。那时候我就发现不少答案网上已经有现成的了，而且有些大牛还有着酷炫的个人网站。</p>
+<h3 id="我适合写博客吗"><a href="#我适合写博客吗" class="headerlink" title="我适合写博客吗"></a>我适合写博客吗</h3><p>&#8195;&#8195;在搞清楚这个问题的同时，我觉得应该改成“你会坚持写博客吗？”<br>“坚持”二字从始至终都是最难的，但无妨坚持下来的都不是平平之辈。<br>&#8195;&#8195;我见识过一些博客主，突然就停更却再也没有恢复的，都是很可惜的。<br>坚持总要有一个理由，放弃同样也是。<br>· 做什么事情自己坚持的最久？<br>· 什么原因导致没有坚持下去？</p>
+]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>创建博客</tag>
+        <tag>创建的第一个博客网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人日记（小宇篇）</title>
+    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <categories>
+        <category>记录美好</category>
+      </categories>
+      <tags>
+        <tag>记录(小宇)</tag>
       </tags>
   </entry>
   <entry>
@@ -333,27 +347,21 @@
   </div>
 <h3 id="转瞬的心动"><a href="#转瞬的心动" class="headerlink" title="转瞬的心动"></a>转瞬的心动</h3>
   <div class="note p-4 mb-4 rounded-small default">
-    <p>一眼心动是她<br>&#8195;&#8195;有时候并不是自己能控制住的，我尝试去摆脱那份情感，<br>可心里如同出笼般猛兽，抵挡不住，不断收缩，不断膨胀。<br>眼神令人从容，忍不住多看几眼，如同明月般清澈，直勾勾的注视忽视了礼貌。<br>行为艺术的感性，与更多的人打交道就会发现自己只是害怕，不敢与之交往。<br>&#8195;&#8195;不可避免的交往，难以置信的选择都只是人的无奈经历。<br>沉默总是不可避免的，但我的选择是绝对成功的，我对你的心挽回不来。<br>—bxy<br>是新鲜感吗，还是喜欢？还是爱？<br>可能吧，都不算，只是我一个人在白日做梦。</p>
+    <p>一眼心动是她<br>&#8195;&#8195;有时候并不是自己能控制住的，我尝试去摆脱那份情感，<br>可心里如同出笼般猛兽，抵挡不住，不断收缩，不断膨胀。<br>眼神令人从容，忍不住多看几眼，如同明月般清澈，直勾勾的注视忽视了礼貌。<br>行为艺术的感性，与更多的人打交道就会发现自己只是害怕，不敢与之交往。<br>&#8195;&#8195;不可避免的交往，难以置信的选择都只是人的无奈经历。<br>沉默总是不可避免的，但我的选择是绝对成功的，我对你的心挽回不来。<br>–bxy<br>是新鲜感吗，还是喜欢？还是爱？<br>可能吧，都不算，只是我一个人在白日做梦。</p>
 
   </div>
+<h2 id="三、时间线"><a href="#三、时间线" class="headerlink" title="三、时间线"></a>三、时间线</h2>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>&#8195;&#8195;当然你可能会觉得厌烦，也有可能根本没看。但这都无所谓了，我就当写日记了。人总要大胆一次。高中升大学，是我第一次大胆，我第一次自己来到湖北汉川以外的世界，当时想的是一个人出去看看不一样的地区，见识不一样的人和事。<br>我做到了，湖北分数线第二的职业院校考进去了，当时高中学习环境很差，深知自己已经考不上二本，但我还是觉得至少能考个好一点的大专，结局就是我成功了。<br>后来第一次加入部门，感受到了部门成员之间的团结合作。再后来竞选部长，我居然在三个人中成功，不可思议。不过困难也随之而来，这个秘书部要经常跟各学院老师打交道，简直是磨碎了我的心气，最离谱是还要上台演讲，我至今还记得那全身肾上腺激素<br>猛增的十几分钟。当时我还是班上的体育委员兼活动委员，组织各种班级活动和事宜。我们宿舍也是非常离谱，六个人八个职位，班长&#x2F;学生会体育部副部长、体委&#x2F;学院秘书部部长、宿舍长&#x2F;班级纪律委员、校级那个啥唱歌的副会长哈哈、千山云彩协会会长（据说也是组织学校级别的活动）<br>还有一个是我当时比较好的朋友，是我在秘书部的下属哈哈哈。大胆一点没什么不好，不违法不违规，只为追求更好的活法和自己。</p>
 
+  </div>
+<p>–2024.12.3</p>
 ]]></content>
       <categories>
         <category>记录美好</category>
       </categories>
       <tags>
         <tag>记录(小恒)</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>个人日记（小宇篇）</title>
-    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      <categories>
-        <category>记录美好</category>
-      </categories>
-      <tags>
-        <tag>记录(小宇)</tag>
       </tags>
   </entry>
   <entry>
