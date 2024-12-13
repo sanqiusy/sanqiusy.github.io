@@ -27,13 +27,32 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/git1.jpg">
 <meta property="og:image" content="http://example.com/images/git2.jpg">
-<meta property="og:image" content="http://example.com/images/git3.jpg">
-<meta property="og:image" content="http://example.com/images/git4.jpg">
-<meta property="og:image" content="http://example.com/images/git4.1.jpg">
+<meta property="og:image" content="http://example.com/images/git3.png">
+<meta property="og:image" content="http://example.com/images/git4.png">
+<meta property="og:image" content="http://example.com/images/git4.1.png">
 <meta property="og:image" content="http://example.com/images/git5.jpg">
 <meta property="og:image" content="http://example.com/images/git6.jpg">
+<meta property="og:image" content="http://example.com/images/node1.jpg">
+<meta property="og:image" content="http://example.com/images/node2.png">
+<meta property="og:image" content="http://example.com/images/node3.jpg">
+<meta property="og:image" content="http://example.com/images/node4.jpg">
+<meta property="og:image" content="http://example.com/images/node5.jpg">
+<meta property="og:image" content="http://example.com/images/node6.jpg">
+<meta property="og:image" content="http://example.com/images/node7.1.jpg">
+<meta property="og:image" content="http://example.com/images/node7.2.jpg">
+<meta property="og:image" content="http://example.com/images/node7.3.jpg">
+<meta property="og:image" content="http://example.com/images/node8.jpg">
+<meta property="og:image" content="http://example.com/images/node9.jpg">
+<meta property="og:image" content="http://example.com/images/node10.jpg">
+<meta property="og:image" content="http://example.com/images/node11.jpg">
+<meta property="og:image" content="http://example.com/images/node12.jpg">
+<meta property="og:image" content="http://example.com/images/node13.jpg">
+<meta property="og:image" content="http://example.com/images/node14.1.jpg">
+<meta property="og:image" content="http://example.com/images/node14.2.jpg">
+<meta property="og:image" content="http://example.com/images/node15.jpg">
+<meta property="og:image" content="http://example.com/images/hexo1.0.png">
 <meta property="article:published_time" content="2024-10-22T12:42:00.707Z">
-<meta property="article:modified_time" content="2024-12-10T12:49:33.918Z">
+<meta property="article:modified_time" content="2024-12-13T09:48:41.493Z">
 <meta property="article:author" content="LRM">
 <meta property="article:tag" content="Hexo博客搭建速成">
 <meta name="twitter:card" content="summary">
@@ -592,8 +611,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-12-10 20:49:33</span>
-            <span class="mobile">2024-12-10 20:49:33</span>
+            <span class="desktop">2024-12-13 17:48:41</span>
+            <span class="mobile">2024-12-13 17:48:41</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -631,12 +650,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>648 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>984 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>3 分钟</span>
         </span>
     
     
@@ -660,60 +679,63 @@
 <a class="button " target="_blank" rel="noopener" href="https://github.com/" title="Github 官网">Github 官网</a> 可以将本地上传到服务器，此博客是以Github为平台搭建的。
 
 <p>域名部署（可以根据本人需求部署，不做要求）</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="一-Git和Nodejs的安装"><a href="#一-Git和Nodejs的安装" class="headerlink" title="一.Git和Nodejs的安装"></a>一.Git和Nodejs的安装</h3><div class="tabs" id="tab-页面内不重复的id"><ul class="nav-tabs"><li class="tab active"><a class="#页面内不重复的id-1">Git 下载安装</a></li><li class="tab"><a class="#页面内不重复的id-2">Nodejs 下载安装</a></li></ul><div class="tab-content"><div class="tab-pane active" id="页面内不重复的id-1"><p>1.点击Windows<br><img lazyload src="/images/loading.svg" data-src="/images/git1.jpg" alt="xz"><br>2、点击 64-bit Git for Windows Setup.下载 这里我电脑是64位,根据自己电脑是多少位选择<br><img lazyload src="/images/loading.svg" data-src="/images/git2.jpg" alt="xz"><br>3、点击下载好的安装包（因为此电脑已安装git，故3-4步骤图片是参考:知乎@乐特<a class="link" target="_blank" rel="noopener" href="https://lete114.github.io/%EF%BC%89">https://lete114.github.io/） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br><img lazyload src="/images/loading.svg" data-src="/images/git3.jpg" alt="xz"><br>4、点击next，直到出现install，再点击install<br><img lazyload src="/images/loading.svg" data-src="/images/git4.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/git4.1.jpg" alt="xz"><br>5.安装好后桌面鼠标右键,会多出Git GUI Here 和 Git Bash Here 两个选项 如下界面<br><img lazyload src="/images/loading.svg" data-src="/images/git5.jpg" alt="xz"><br>6.查看Git是否安装成功 打开cmd窗口(win+r输入cmd回车)输入:</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="一-Git和Nodejs的安装"><a href="#一-Git和Nodejs的安装" class="headerlink" title="一.Git和Nodejs的安装"></a>一.Git和Nodejs的安装</h3><div class="tabs" id="tab-页面内不重复的id"><ul class="nav-tabs"><li class="tab active"><a class="#页面内不重复的id-1">Git 下载安装</a></li><li class="tab"><a class="#页面内不重复的id-2">Nodejs 下载安装</a></li></ul><div class="tab-content"><div class="tab-pane active" id="页面内不重复的id-1"><p>1.点击Windows<br><img lazyload src="/images/loading.svg" data-src="/images/git1.jpg" alt="xz"><br>2、点击 64-bit Git for Windows Setup.下载 这里我电脑是64位,根据自己电脑是多少位选择<br><img lazyload src="/images/loading.svg" data-src="/images/git2.jpg" alt="xz"><br>3、点击下载好的安装包</p>
+<p><img lazyload src="/images/loading.svg" data-src="/images/git3.png" alt="xz"><br>4、点击next，直到出现install，再点击install<br><img lazyload src="/images/loading.svg" data-src="/images/git4.png" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/git4.1.png" alt="xz"><br>5.安装好后桌面鼠标右键,会多出Git GUI Here 和 Git Bash Here 两个选项 如下界面<br><img lazyload src="/images/loading.svg" data-src="/images/git5.jpg" alt="xz"><br>6.查看Git是否安装成功 打开cmd窗口(win+r输入cmd回车)输入:</p>
   <div class="note p-4 mb-4 rounded-small default">
     <p>git –version </p>
 
   </div>
+若出现版本号则为安装成功。
 
-<p><img lazyload src="/images/loading.svg" data-src="/images/git6.jpg" alt="xz"></p></div><div class="tab-pane" id="页面内不重复的id-2"><p>Nodejs因为工作原因经常会切换版本，这里我推荐使用nvm，可以直接管理nodejs的安装和版本切换（建议）</p></div></div></div>
+<p><img lazyload src="/images/loading.svg" data-src="/images/git6.jpg" alt="xz"></p></div><div class="tab-pane" id="页面内不重复的id-2"><p>Nodejs因为工作原因经常会切换版本，这里我推荐使用nvm，可以直接管理nodejs的安装和版本切换（建议）<br>正常情况下安装一个即可。<br>1、根据自己电脑系统及位数选择，我这里选择windows64位.msi（安装程序）格式安装包<br>此处简单说明一下.msi（安装程序）和.zip（压缩包）格式区别：<br>①.msi是Windows installer开发出来的程序安装文件，它可以让你安装，修改，卸载你所安装的程序。<br>②zip是一个压缩包，解压之后即可，不需要安装。<br><img lazyload src="/images/loading.svg" data-src="/images/node1.jpg" alt="xz"><br>2、下载完成后，双击安装包，开始安装，一直点next即可，安装路径默认在C:\Program Files下，也可以自定义修改（建议）<br><img lazyload src="/images/loading.svg" data-src="/images/node2.png" alt="xz"><br>3、待安装完成后，在电脑下方搜索框搜索【命令提示符】，然后点击以管理员身份运行<br><img lazyload src="/images/loading.svg" data-src="/images/node3.jpg" alt="xz"><br>4、输入命令验证是否安装成功<br>查询Node.js版本（若显示版本则安装成功）：</p>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>node -v </p>
 
-<h3 id="二-hexo的安装"><a href="#二-hexo的安装" class="headerlink" title="二.hexo的安装"></a>二.hexo的安装</h3><p>1.在自己想要的目录新建一文件夹，文件夹自定义 我这里是在D:\blog_zhangxz\hexoblog文件夹下右键，选择Git Bash Here</p>
-<p>2.使用命令安装Hexo</p>
+  </div>
+查询npm版本（若显示版本则安装成功）：
 
   <div class="note p-4 mb-4 rounded-small default">
-    <p>npm install hexo-cli -g </p>
+    <p>npm -v </p>
 
   </div>
 
-<p>3.安装完成后，输入 hexo -v 输出版本信息</p>
-
+<p><img lazyload src="/images/loading.svg" data-src="/images/node4.jpg" alt="xz"><br>5、环境配置<br>找到安装路径或自己选择的安装路径，在该路径下新建两个文件夹【node_global】和【node_cache】<br><img lazyload src="/images/loading.svg" data-src="/images/node5.jpg" alt="xz"><br>6、【Win+R】打开窗口中输入以下命令</p>
   <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo -v </p>
+    <p> npm config set prefix “Node.js安装路径\node_global”<br>npm config set cache “Node.js安装路径\node_cache”</p>
 
   </div>
 
-<p>4.输入hexo init初始化(耐心等待…) 初始化后文件目录下会多出如下图文件和文件夹</p>
-
+<p><img lazyload src="/images/loading.svg" data-src="/images/node6.jpg" alt="xz"><br>7、 在电脑下方搜索框搜索【环境变量】，然后点击打开，按照下图点击进入操作<br><img lazyload src="/images/loading.svg" data-src="/images/node7.1.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/node7.2.jpg" alt="xz"><br>点击新建<br><img lazyload src="/images/loading.svg" data-src="/images/node7.3.jpg" alt="xz"><br>8、填好变量名和变量值后点击确定</p>
   <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo init </p>
+    <p> 变量名：NODE_PATH<br>变量值：Node.js安装路径\node_global\node_modules（根据你的实际安装路径修改）</p>
 
   </div>
 
-<p>5.输入命令 hexo generate可以缩写hexo g 生成HTML页面</p>
+<p><img lazyload src="/images/loading.svg" data-src="/images/node8.jpg" alt="xz"><br>9、在上述路径下手动创建【node_modules】文件夹<br><img lazyload src="/images/loading.svg" data-src="/images/node9.jpg" alt="xz"><br>10、选中用户变量中的Path然后点击编辑<br><img lazyload src="/images/loading.svg" data-src="/images/node10.jpg" alt="xz"><br>11、修改环境变量<br>【C:\Users\xxx\AppData\Roaming\npm】修改为【Node.js安装路径\node_global】，修改完成后点击确定即可（根据你的实际安装路径修改）<br><img lazyload src="/images/loading.svg" data-src="/images/node11.jpg" alt="xz"><br>12、选中系统变量中的Path然后点击编辑<br><img lazyload src="/images/loading.svg" data-src="/images/node12.jpg" alt="xz"><br>13、新建环境变量【%NODE_PATH%】，新建完成后点击确定<br><img lazyload src="/images/loading.svg" data-src="/images/node13.jpg" alt="xz"><br>14、一直点击确定即可<br><img lazyload src="/images/loading.svg" data-src="/images/node14.1.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/node14.2.jpg" alt="xz"><br>15、再次【Win+R】打开窗口中输入以下命令</p>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>npm install express -g </p>
+
+  </div>
+出现以下内容则表示配置成功
+
+<p><img lazyload src="/images/loading.svg" data-src="/images/node15.jpg" alt="xz"></p></div></div></div>
+
+<h3 id="二-hexo的安装"><a href="#二-hexo的安装" class="headerlink" title="二.hexo的安装"></a>二.hexo的安装</h3><p>1、本地搭建 hexo 静态博客：创建一个新的本地Hexo仓库， 在自己想要的目录新建一文件夹，文件夹自定义<br>我这里是在D:\blog_zhangxz\hexoblog文件夹下右键，选择Git Bash Here。<br><img lazyload src="/images/loading.svg" data-src="/images/hexo1.0.png" alt="xz"><br>2、依次输入以下命令</p>
 
   <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo generate </p>
+    <p>hexo init myBlog </p>
 
   </div>
 
-<p>会多出public文件夹如下图，public文件夹内是hexo生成的html文件还有css、js、json</p>
-<p>6.使用命令 hexo server 可缩写hexo s启动服务</p>
-
   <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo server </p>
+    <p>cd myBlog </p>
 
   </div>
 
-<p>7.在浏览器里输入 <a class="link" target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 这是默认主题，后面可以在网上下载别人做好的主题进行修改(主题修改不在本章的知识范围)</p>
-<p>可以使用Ctrl+C中断本地服务</p>
-<p>如果你不喜欢这个端口可使用命令hexo server -p 1314指定端口，访问<br><a class="link" target="_blank" rel="noopener" href="http://localhost:1314/">http://localhost:1314 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-
   <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo server -p 1314 </p>
+    <p>npm install </p>
 
   </div>
-
 <h3 id="三-部署项目到Github远程仓库"><a href="#三-部署项目到Github远程仓库" class="headerlink" title="三.部署项目到Github远程仓库"></a>三.部署项目到Github远程仓库</h3>
         </div>
 
@@ -728,7 +750,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-12-10 20:49:33
+                    :</strong> 2024-12-13 17:48:41
             </li>
         
         <li>
@@ -888,7 +910,7 @@
                     </span>
                     
                         <span>
-                            共 6.7k 字
+                            共 7k 字
                         </span>
                     
                 </p>
