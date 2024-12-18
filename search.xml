@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>FTP服务器搭建</title>
+    <url>/2024/12/10/FTP%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>找到控制面板先打开程序，再点击启用或关闭Windows功能。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-1.0.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/ftp-1.1.png" alt="xz"></p>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>①在FTP服务器②Web管理工具③Internet Information Services可承载的Web核心前打上勾，点击确定，等待安装。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-2.png" alt="xz"></p>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>先打开①服务和应用程序再打开②Internet Information Services（IIS）管理器，<br>点击进入，可以在连接一栏看到③计算机名称，点击该计算机名左侧的展开按钮，④右键单击网站，选择添加FTP站点。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-3.png" alt="xz"></p>
+<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>此时，将进入FTP站点添加向导。首先，向导将要求填写FTP站点名称和设置FTP内容目录，<br>FTP站点名称可以自定义，这里填写的是FTP Server-1，FTP内容目录也可选择任意文件夹，这里选择的是D:\FTP\Server-1。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-4.png" alt="xz"></p>
+<h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><p>①填写好FTP站点名称，设置完FTP内容目录后，点击确定按钮，再点击下一步<br>②点击下一步后，先不要急着继续，查一下电脑的IP地址，通过win+R命令框输入cmd<br>③打开命令符后输入ipconfig回车，查看电脑IP地址。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-5.png" alt="xz"></p>
+<h3 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h3><p>回到FTP站点添加向导，设置绑定和SSL。IP地址栏输入刚刚查到的IP地址，端口保持为21不变，<br>启用虚拟主机名项可以不必勾选，自动启动FTP站点可以勾选，SSL可以选择无SSL，操作完成后点击下一步。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-6.png" alt="xz"></p>
+<h3 id="第七步"><a href="#第七步" class="headerlink" title="第七步"></a>第七步</h3><p>接下来FTP站点添加向导将要求填写身份验证和授权信息，勾选身份验证下的匿名和基本两项前的复选框，<br>允许访问项设置为所有用户，勾选读取和写入权限前的复选框，点击完成。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-7.png" alt="xz"></p>
+<h3 id="第八步"><a href="#第八步" class="headerlink" title="第八步"></a>第八步</h3><p>此时可以看到，FTP站点已经创建成功并正常运行。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-8.png" alt="xz"></p>
+<h3 id="第九步"><a href="#第九步" class="headerlink" title="第九步"></a>第九步</h3><p>①不过这还没完，还要允许FTP服务器通过防火墙，找到防火墙，点击进入允许应用通过Windows防火墙。<br>②点击更改设置，勾选列表中FTP服务器前的复选框，勾选后点击确定以完成设置<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-9.png" alt="xz"></p>
+<h3 id="第十步"><a href="#第十步" class="headerlink" title="第十步"></a>第十步</h3><p>最后在文件资源管理器中输入FTP服务器的地址【ftp:&#x2F;&#x2F;电脑IP地址】即可查看。</p>
+<h2 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2>]]></content>
+      <categories>
+        <category>FTP</category>
+      </categories>
+      <tags>
+        <tag>FTP服务器搭建学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客基本功能</title>
     <url>/2024/03/29/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="一、博客文本基本参考"><a href="#一、博客文本基本参考" class="headerlink" title="一、博客文本基本参考"></a>一、博客文本基本参考</h2><h3 id="Notes-笔记模块"><a href="#Notes-笔记模块" class="headerlink" title="Notes 笔记模块"></a>Notes 笔记模块</h3><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>大号提示块 </summary>
@@ -186,17 +207,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PeoPleSoft第一次学习</title>
-    <url>/2024/04/16/PeoPleSoft%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      <categories>
-        <category>PeoPleSoft</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft项目创建</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客快速搭建</title>
     <url>/2024/10/22/Hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先，从Git官网 <a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a> 下载适合你操作系统的Git安装文件，然后按照提示进行安装。<br>接下来，从Node.js官网 <a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a> 下载适合你操作系统的Node.js安装文件，并按照提示进行安装。<br>安装完成后，可以在命令行窗口中通过输入”git –version” 和 “node -v”来查看Git和Node.js的版本，确保已经成功安装。</p>
@@ -284,20 +294,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于我的第一篇博客</title>
-    <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&#8195;&#8195;第一次遇博客还是大学的时候，当时班上有个很厉害的编程高手（至少当时那个水平对我们已经非常厉害的 ），每天都鼓捣写些网页和小程序。<br>&#8195;&#8195;直到某一天他在朋友圈发布了一个链接，介绍是他写的一篇博客，里面有很多他写的代码和记录，还有那华丽的色彩和特效深深的吸引着我，真的很酷，从那一天我就萌生写一篇博客的想法。</p>
-<h3 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h3><p>&#8195;&#8195;为什么要写博客，其实这个问题大部分人都知道自己的标准答案，就比如我，前言已经很清楚了，不过后来写着写着发生了一些变化，不再满足自己写的东西只有那么短短几篇，转化成了一种记录。<br>&#8195;&#8195;翻了一下记录，我的博客建站只有短短不到一年的时间，虽然这已经不是我的第一篇博客，但上一个因为各种原因被废弃掉了，其实总共也就一年零两个月。<br>&#8195;&#8195;记得那时作为一个初入职场的小菜鸟有许多问题、资料都要在网上查找。那时候我就发现不少答案网上已经有现成的了，而且有些大牛还有着酷炫的个人网站。</p>
-<h3 id="我适合写博客吗"><a href="#我适合写博客吗" class="headerlink" title="我适合写博客吗"></a>我适合写博客吗</h3><p>&#8195;&#8195;在搞清楚这个问题的同时，我觉得应该改成“你会坚持写博客吗？”<br>“坚持”二字从始至终都是最难的，但无妨坚持下来的都不是平平之辈。<br>&#8195;&#8195;我见识过一些博客主，突然就停更却再也没有恢复的，都是很可惜的。<br>坚持总要有一个理由，放弃同样也是。<br>· 做什么事情自己坚持的最久？<br>· 什么原因导致没有坚持下去？</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>创建的第一个博客网站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>利用XML Publisher创建PeopleSoft报表</title>
     <url>/2024/12/17/PeopleSoft%E5%88%9B%E5%BB%BA%E6%8A%A5%E8%A1%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>XML Publisher（现在称为 Oracle Business Intelligence Publisher，即 BI Publisher）是一个基于模板的报表工具，<br>它利用了数据提取和显示的标准技术。XML Publisher 工具可以在开发报表时将数据逻辑从表示层隔离出来，并在运行时再将二者组合在一起。<br>因此，尽管技术顾问（使用 Application Engines&#x2F;PeopleCode 或 PSQuery）可以独立地设计通用数据提取逻辑，<br>但功能顾问或最终用户可以使用通用桌面工具（如 Microsoft Word）根据技术顾问创建的数据源来设计呈现方式。<br>由于查询还可以用作数据源，因此XML Publisher实质上是针对需要查看报表的那个人（最终用户）扩展工具的灵活性。<br>这意味着，获得培训最少的最终用户能够根据一般设计的数据源来设计模板和报表，从而大大降低了拥有成本。</p>
@@ -317,35 +313,128 @@
       </tags>
   </entry>
   <entry>
-    <title>FTP服务器搭建</title>
-    <url>/2024/12/10/FTP%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>找到控制面板先打开程序，再点击启用或关闭Windows功能。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-1.0.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/ftp-1.1.png" alt="xz"></p>
-<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>①在FTP服务器②Web管理工具③Internet Information Services可承载的Web核心前打上勾，点击确定，等待安装。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-2.png" alt="xz"></p>
-<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>先打开①服务和应用程序再打开②Internet Information Services（IIS）管理器，<br>点击进入，可以在连接一栏看到③计算机名称，点击该计算机名左侧的展开按钮，④右键单击网站，选择添加FTP站点。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-3.png" alt="xz"></p>
-<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>此时，将进入FTP站点添加向导。首先，向导将要求填写FTP站点名称和设置FTP内容目录，<br>FTP站点名称可以自定义，这里填写的是FTP Server-1，FTP内容目录也可选择任意文件夹，这里选择的是D:\FTP\Server-1。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-4.png" alt="xz"></p>
-<h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><p>①填写好FTP站点名称，设置完FTP内容目录后，点击确定按钮，再点击下一步<br>②点击下一步后，先不要急着继续，查一下电脑的IP地址，通过win+R命令框输入cmd<br>③打开命令符后输入ipconfig回车，查看电脑IP地址。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-5.png" alt="xz"></p>
-<h3 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h3><p>回到FTP站点添加向导，设置绑定和SSL。IP地址栏输入刚刚查到的IP地址，端口保持为21不变，<br>启用虚拟主机名项可以不必勾选，自动启动FTP站点可以勾选，SSL可以选择无SSL，操作完成后点击下一步。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-6.png" alt="xz"></p>
-<h3 id="第七步"><a href="#第七步" class="headerlink" title="第七步"></a>第七步</h3><p>接下来FTP站点添加向导将要求填写身份验证和授权信息，勾选身份验证下的匿名和基本两项前的复选框，<br>允许访问项设置为所有用户，勾选读取和写入权限前的复选框，点击完成。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-7.png" alt="xz"></p>
-<h3 id="第八步"><a href="#第八步" class="headerlink" title="第八步"></a>第八步</h3><p>此时可以看到，FTP站点已经创建成功并正常运行。<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-8.png" alt="xz"></p>
-<h3 id="第九步"><a href="#第九步" class="headerlink" title="第九步"></a>第九步</h3><p>①不过这还没完，还要允许FTP服务器通过防火墙，找到防火墙，点击进入允许应用通过Windows防火墙。<br>②点击更改设置，勾选列表中FTP服务器前的复选框，勾选后点击确定以完成设置<br><img lazyload src="/images/loading.svg" data-src="/images/ftp-9.png" alt="xz"></p>
-<h3 id="第十步"><a href="#第十步" class="headerlink" title="第十步"></a>第十步</h3><p>最后在文件资源管理器中输入FTP服务器的地址【ftp:&#x2F;&#x2F;电脑IP地址】即可查看。</p>
-<h2 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2>]]></content>
+    <title>PeoPleSoft第一次学习</title>
+    <url>/2024/04/16/PeoPleSoft%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       <categories>
-        <category>FTP</category>
+        <category>PeoPleSoft</category>
       </categories>
       <tags>
-        <tag>FTP服务器搭建学习</tag>
+        <tag>PeopleSoft项目创建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人日记（小宇篇）</title>
+    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <categories>
+        <category>记录美好</category>
+      </categories>
+      <tags>
+        <tag>记录(小宇)</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于我的第一篇博客</title>
+    <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&#8195;&#8195;第一次遇博客还是大学的时候，当时班上有个很厉害的编程高手（至少当时那个水平对我们已经非常厉害的 ），每天都鼓捣写些网页和小程序。<br>&#8195;&#8195;直到某一天他在朋友圈发布了一个链接，介绍是他写的一篇博客，里面有很多他写的代码和记录，还有那华丽的色彩和特效深深的吸引着我，真的很酷，从那一天我就萌生写一篇博客的想法。</p>
+<h3 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h3><p>&#8195;&#8195;为什么要写博客，其实这个问题大部分人都知道自己的标准答案，就比如我，前言已经很清楚了，不过后来写着写着发生了一些变化，不再满足自己写的东西只有那么短短几篇，转化成了一种记录。<br>&#8195;&#8195;翻了一下记录，我的博客建站只有短短不到一年的时间，虽然这已经不是我的第一篇博客，但上一个因为各种原因被废弃掉了，其实总共也就一年零两个月。<br>&#8195;&#8195;记得那时作为一个初入职场的小菜鸟有许多问题、资料都要在网上查找。那时候我就发现不少答案网上已经有现成的了，而且有些大牛还有着酷炫的个人网站。</p>
+<h3 id="我适合写博客吗"><a href="#我适合写博客吗" class="headerlink" title="我适合写博客吗"></a>我适合写博客吗</h3><p>&#8195;&#8195;在搞清楚这个问题的同时，我觉得应该改成“你会坚持写博客吗？”<br>“坚持”二字从始至终都是最难的，但无妨坚持下来的都不是平平之辈。<br>&#8195;&#8195;我见识过一些博客主，突然就停更却再也没有恢复的，都是很可惜的。<br>坚持总要有一个理由，放弃同样也是。<br>· 做什么事情自己坚持的最久？<br>· 什么原因导致没有坚持下去？</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>创建的第一个博客网站</tag>
       </tags>
   </entry>
   <entry>
     <title>回顾2024</title>
     <url>/2024/12/18/%E5%9B%9E%E9%A1%BE2024/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&#8195;&#8195;今天是2023年的最后一天，到我来这家公司已经一个月左右，刚好赶上这么个日子，大家一起聚餐喝酒言欢，甚是开心。<br>希望我能更加努力融入到这个团体中去，也希望我们所有人前程似锦，身体健康。<br>&#8195;&#8195;最后好像喝的有点多，微醺。第一次喝醉但还保留意识，回到租的房子吐了，微冷，但很开心。</p>
+<table>
+<thead>
+<tr>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh61.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh62.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh63.jpg" alt="xz"></th>
+</tr>
+</thead>
+</table>
+<p>&#8195;&#8195;在2024年1月1日，阳光明媚，今天是周末本来想着睡个好觉却被清晨响铃给打扰，可我一点都不厌烦。<br>因为我好哥们张宇借钱给我买的电脑到了，按耐不住的喜悦化作行动下楼把电脑拿到房间。<br>虽然我也不知道你那里好，可能这就是你的优点吧，谢谢你张宇！</p>
+<table>
+<thead>
+<tr>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh43.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh42.jpg" alt="xz"></th>
+</tr>
+</thead>
+</table>
+<p>&#8195;&#8195;张宇很热心，帮了我很多忙，教了我很多电脑怎么配置的知识，无论以后如何我都希望我们之间都不要闹得不欢而散。</p>
+<table>
+<thead>
+<tr>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh44.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh45.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh46.jpg" alt="xz"></th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh36.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh35.jpg" alt="xz"></th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh01.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh05.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh02.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/zlh03.jpg" alt="xz"></th>
+</tr>
+</thead>
+</table>
+]]></content>
       <categories>
         <category>年度记忆</category>
       </categories>
       <tags>
         <tag>回顾2024</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人日记（小雷篇）</title>
+    <url>/2024/10/08/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E9%9B%B7%E6%97%A5%E9%B8%A3%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
+<thead>
+<tr>
+<th><img lazyload src="/images/loading.svg" data-src="/images/kl-sy03.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/sy-love02.jpg" alt="xz"></th>
+<th><img lazyload src="/images/loading.svg" data-src="/images/sy-love03.jpg" alt="xz"></th>
+</tr>
+</thead>
+</table>
+<h1 id="缘起-月光下的她"><a href="#缘起-月光下的她" class="headerlink" title="缘起(月光下的她)"></a>缘起(月光下的她)</h1><p>两句诗表达了我对你的爱意，我希望不是等待喜欢的东西到来</p>
+<details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>爱意随风起 风止意难平。 </summary>
+              <div class="content">
+              <p>风停止了，但是我的感情仍然没有平复。之所以爱意随风起，因为我对你的喜爱是长久以往的。</p>
+              </div>
+            </details>
+<h2 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h2><details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>白月光的初识 </summary>
+              <div class="content">
+              <p>&#8195;&#8195;我不知道该用什么来做为此封信的开头，不知道为什么要这样去写，我也不知道写到怎样是个头，喜欢的看不见摸不着，甚至连声音也听不到，即使如此我也没有放弃过对你的希望，因为我觉得世间充满着包容，你肯定是有你的难处，比如工作忙吧。<br>&#8195;&#8195;我们都是学生，不同的只是我是一名大一学生，而你却已经是一名大三学姐，这样说应该也没差吧。我们的生活状态不一样，这是很好理解的。<br>&#8195;&#8195;不知道已经过去了多久，在此之前我有过两次经历，第一次大概是初中的时候吧，第一次更准确的说应该是玩闹，那时是她朝我走来我却没有把握住，可能那个时候的我还没有“爱”与“宽容”这个概念，最后我很绝情的跟她分手了，原因是嫌她太烦了；<br>&#8195;&#8195;话说这也是报应，高中时让我认识到一个令我一见钟情的女孩子，三番五次去表白，结果很令人遗憾从未成功过，最开始她给我的答复是还没从上次的阴影中走出来，然而到了第三年的原因就是莫名其妙告诉我她已经有男朋友了，还是我身边的一个人，我也不知道这是造化弄人还是冥冥之中。<br>&#8195;&#8195;直到毕业报选志愿通知书，我一个人来到一个陌生的城市，来到了大襄阳，这里没有认识的亲人、朋友、老师、同学，仅仅有的是重新开始的生活和学习。<br>刚开始我是非常抱怨之前跟我一起填志愿的那群伙伴们，凭什么都是第一志愿为什么偏偏就选中了我一个人，为什么呢？但随着时间的推移我也就慢慢的接受了。我不知道该找谁去诉说这些埋藏心里的话，我很苦恼。<br>&#8195;&#8195;于是我遇见了你，我喜欢的人，我的宝贝，这次我是无论如何都不会选择放手，尽管你非常的忙，总是没时间回复我的消息，总是答非所问，不愿意跟我分享自己的生活，似乎就像是在玩捉迷藏般，但我都不介意，因为爱一个人就是要互相宽容的，对吧。<br>&#8195;&#8195;（但如果你对我已经没感觉的话，请及时提出来，对你我都好，因为我对你是毫无保留的。）<br>&#8195;&#8195;谈不上非常喜欢，也谈不上非常爱，只是我的生活已经缺你不可，一直都在想你。<br>&#8195;&#8195;我多么想去拥抱你，可惜山南水北，连抱你的机会都没有！<br>&#8195;&#8195;首先我在这里祝愿我的小猪猪身体健康，每天快快乐乐的，然后是工作顺利得到领导提拔升职赚大钱。 礼物嘛，都只是一些日用品和零食，其实还有两件礼物的，但允许我私自将其改发到5月20号。<br>&#8195;&#8195;写这封信的时候已经是5月5号，正好这天立夏，你说过你喜欢在夏天吃杨梅。你每天起早贪黑的，我看着心疼啊，希望那几袋面包能减轻你早起的饥饿，而那些睡眠眼罩希望能带给你晚睡的安眠；你经常告诉我你手机忘了充电，我也是没想到你这样忘事biganz</p><p>&#8195; 刚遇见你的时候你是一个很开朗的女孩子，不管有什么事情都会跟我说，也不知熟络之后反而没能那么大大方方令我很头疼，但总归有一点我对你的喜欢是无法改变的。</p>
+              </div>
+            </details>
+<h2 id="相知"><a href="#相知" class="headerlink" title="相知"></a>相知</h2><h2 id="知微"><a href="#知微" class="headerlink" title="知微"></a>知微</h2><h2 id="灵犀"><a href="#灵犀" class="headerlink" title="灵犀"></a>灵犀</h2>]]></content>
+      <categories>
+        <category>记录美好</category>
+      </categories>
+      <tags>
+        <tag>记录(小雷)</tag>
       </tags>
   </entry>
   <entry>
@@ -422,48 +511,6 @@
       </categories>
       <tags>
         <tag>记录(小恒)</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>个人日记（小雷篇）</title>
-    <url>/2024/10/08/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E9%9B%B7%E6%97%A5%E9%B8%A3%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
-<thead>
-<tr>
-<th><img lazyload src="/images/loading.svg" data-src="/images/kl-sy03.jpg" alt="xz"></th>
-<th><img lazyload src="/images/loading.svg" data-src="/images/sy-love02.jpg" alt="xz"></th>
-<th><img lazyload src="/images/loading.svg" data-src="/images/sy-love03.jpg" alt="xz"></th>
-</tr>
-</thead>
-</table>
-<h1 id="缘起-月光下的她"><a href="#缘起-月光下的她" class="headerlink" title="缘起(月光下的她)"></a>缘起(月光下的她)</h1><p>两句诗表达了我对你的爱意，我希望不是等待喜欢的东西到来</p>
-<details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>爱意随风起 风止意难平。 </summary>
-              <div class="content">
-              <p>风停止了，但是我的感情仍然没有平复。之所以爱意随风起，因为我对你的喜爱是长久以往的。</p>
-              </div>
-            </details>
-<h2 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h2><details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>白月光的初识 </summary>
-              <div class="content">
-              <p>&#8195;&#8195;我不知道该用什么来做为此封信的开头，不知道为什么要这样去写，我也不知道写到怎样是个头，喜欢的看不见摸不着，甚至连声音也听不到，即使如此我也没有放弃过对你的希望，因为我觉得世间充满着包容，你肯定是有你的难处，比如工作忙吧。<br>&#8195;&#8195;我们都是学生，不同的只是我是一名大一学生，而你却已经是一名大三学姐，这样说应该也没差吧。我们的生活状态不一样，这是很好理解的。<br>&#8195;&#8195;不知道已经过去了多久，在此之前我有过两次经历，第一次大概是初中的时候吧，第一次更准确的说应该是玩闹，那时是她朝我走来我却没有把握住，可能那个时候的我还没有“爱”与“宽容”这个概念，最后我很绝情的跟她分手了，原因是嫌她太烦了；<br>&#8195;&#8195;话说这也是报应，高中时让我认识到一个令我一见钟情的女孩子，三番五次去表白，结果很令人遗憾从未成功过，最开始她给我的答复是还没从上次的阴影中走出来，然而到了第三年的原因就是莫名其妙告诉我她已经有男朋友了，还是我身边的一个人，我也不知道这是造化弄人还是冥冥之中。<br>&#8195;&#8195;直到毕业报选志愿通知书，我一个人来到一个陌生的城市，来到了大襄阳，这里没有认识的亲人、朋友、老师、同学，仅仅有的是重新开始的生活和学习。<br>刚开始我是非常抱怨之前跟我一起填志愿的那群伙伴们，凭什么都是第一志愿为什么偏偏就选中了我一个人，为什么呢？但随着时间的推移我也就慢慢的接受了。我不知道该找谁去诉说这些埋藏心里的话，我很苦恼。<br>&#8195;&#8195;于是我遇见了你，我喜欢的人，我的宝贝，这次我是无论如何都不会选择放手，尽管你非常的忙，总是没时间回复我的消息，总是答非所问，不愿意跟我分享自己的生活，似乎就像是在玩捉迷藏般，但我都不介意，因为爱一个人就是要互相宽容的，对吧。<br>&#8195;&#8195;（但如果你对我已经没感觉的话，请及时提出来，对你我都好，因为我对你是毫无保留的。）<br>&#8195;&#8195;谈不上非常喜欢，也谈不上非常爱，只是我的生活已经缺你不可，一直都在想你。<br>&#8195;&#8195;我多么想去拥抱你，可惜山南水北，连抱你的机会都没有！<br>&#8195;&#8195;首先我在这里祝愿我的小猪猪身体健康，每天快快乐乐的，然后是工作顺利得到领导提拔升职赚大钱。 礼物嘛，都只是一些日用品和零食，其实还有两件礼物的，但允许我私自将其改发到5月20号。<br>&#8195;&#8195;写这封信的时候已经是5月5号，正好这天立夏，你说过你喜欢在夏天吃杨梅。你每天起早贪黑的，我看着心疼啊，希望那几袋面包能减轻你早起的饥饿，而那些睡眠眼罩希望能带给你晚睡的安眠；你经常告诉我你手机忘了充电，我也是没想到你这样忘事biganz</p><p>&#8195; 刚遇见你的时候你是一个很开朗的女孩子，不管有什么事情都会跟我说，也不知熟络之后反而没能那么大大方方令我很头疼，但总归有一点我对你的喜欢是无法改变的。</p>
-              </div>
-            </details>
-<h2 id="相知"><a href="#相知" class="headerlink" title="相知"></a>相知</h2><h2 id="知微"><a href="#知微" class="headerlink" title="知微"></a>知微</h2><h2 id="灵犀"><a href="#灵犀" class="headerlink" title="灵犀"></a>灵犀</h2>]]></content>
-      <categories>
-        <category>记录美好</category>
-      </categories>
-      <tags>
-        <tag>记录(小雷)</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>个人日记（小宇篇）</title>
-    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      <categories>
-        <category>记录美好</category>
-      </categories>
-      <tags>
-        <tag>记录(小宇)</tag>
       </tags>
   </entry>
 </search>
