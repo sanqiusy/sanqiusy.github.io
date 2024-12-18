@@ -284,19 +284,30 @@
       </tags>
   </entry>
   <entry>
+    <title>关于我的第一篇博客</title>
+    <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&#8195;&#8195;第一次遇博客还是大学的时候，当时班上有个很厉害的编程高手（至少当时那个水平对我们已经非常厉害的 ），每天都鼓捣写些网页和小程序。<br>&#8195;&#8195;直到某一天他在朋友圈发布了一个链接，介绍是他写的一篇博客，里面有很多他写的代码和记录，还有那华丽的色彩和特效深深的吸引着我，真的很酷，从那一天我就萌生写一篇博客的想法。</p>
+<h3 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h3><p>&#8195;&#8195;为什么要写博客，其实这个问题大部分人都知道自己的标准答案，就比如我，前言已经很清楚了，不过后来写着写着发生了一些变化，不再满足自己写的东西只有那么短短几篇，转化成了一种记录。<br>&#8195;&#8195;翻了一下记录，我的博客建站只有短短不到一年的时间，虽然这已经不是我的第一篇博客，但上一个因为各种原因被废弃掉了，其实总共也就一年零两个月。<br>&#8195;&#8195;记得那时作为一个初入职场的小菜鸟有许多问题、资料都要在网上查找。那时候我就发现不少答案网上已经有现成的了，而且有些大牛还有着酷炫的个人网站。</p>
+<h3 id="我适合写博客吗"><a href="#我适合写博客吗" class="headerlink" title="我适合写博客吗"></a>我适合写博客吗</h3><p>&#8195;&#8195;在搞清楚这个问题的同时，我觉得应该改成“你会坚持写博客吗？”<br>“坚持”二字从始至终都是最难的，但无妨坚持下来的都不是平平之辈。<br>&#8195;&#8195;我见识过一些博客主，突然就停更却再也没有恢复的，都是很可惜的。<br>坚持总要有一个理由，放弃同样也是。<br>· 做什么事情自己坚持的最久？<br>· 什么原因导致没有坚持下去？</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>创建的第一个博客网站</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>利用XML Publisher创建PeopleSoft报表</title>
     <url>/2024/12/17/PeopleSoft%E5%88%9B%E5%BB%BA%E6%8A%A5%E8%A1%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>XML Publisher（现在称为 Oracle Business Intelligence Publisher，即 BI Publisher）是一个基于模板的报表工具，<br>它利用了数据提取和显示的标准技术。XML Publisher 工具可以在开发报表时将数据逻辑从表示层隔离出来，并在运行时再将二者组合在一起。<br>因此，尽管技术顾问（使用 Application Engines&#x2F;PeopleCode 或 PSQuery）可以独立地设计通用数据提取逻辑，<br>但功能顾问或最终用户可以使用通用桌面工具（如 Microsoft Word）根据技术顾问创建的数据源来设计呈现方式。<br>由于查询还可以用作数据源，因此XML Publisher实质上是针对需要查看报表的那个人（最终用户）扩展工具的灵活性。<br>这意味着，获得培训最少的最终用户能够根据一般设计的数据源来设计模板和报表，从而大大降低了拥有成本。</p>
-<h2 id="一、安装-Oracle-XML-Publisher-Desktop"><a href="#一、安装-Oracle-XML-Publisher-Desktop" class="headerlink" title="一、安装 Oracle XML Publisher Desktop"></a>一、安装 Oracle XML Publisher Desktop</h2><p>XML Publisher Desktop&#x2F;Template Builder随PeopleSoft Tools 8.60一起提供，您可以从PeopleSoft XML Publisher页面下载该软件。</p>
+<h2 id="一、安装-Oracle-XML-Publisher-Desktop"><a href="#一、安装-Oracle-XML-Publisher-Desktop" class="headerlink" title="一、安装 Oracle XML Publisher Desktop"></a>一、安装 Oracle XML Publisher Desktop</h2><p>XML Publisher Desktop&#x2F;Template Builder随PeopleSoft Tools 8.60一起提供，您可以从PeopleSoft XML Publisher页面下载该软件。<br><img lazyload src="/images/loading.svg" data-src="/images/xml1.0.png" alt="xz"></p>
 <h2 id="二、创建并注册数据源"><a href="#二、创建并注册数据源" class="headerlink" title="二、创建并注册数据源"></a>二、创建并注册数据源</h2><p>在创建任何报表之前，您都必须创建并注册一个数据源。用户查询是应用程序用于为 XML Publisher 报表检索数据的数据源。<br>XML Publisher支持PS Query、Rowsets、XML Files以及其他各种类型的数据源。</p>
-<p>1.登录到PeopleSoft Application，在左侧导航栏中展开<strong>Menu &gt; Reporting Tools &gt; BI Publisher &gt; Register BIP Data Sources</strong>。</p>
-<p>2.由于您将使用PS查询，因此单击Add a New Value。选择PS Query作为Data Source类型，并单击Data Source ID的Look Up Query搜索图标。</p>
-<p>3.在begins with域中输入 “P”，然后单击Lookup按钮。向下滚动找到并单击“PERSONAL_DATA_PAY”。</p>
-<p>4.单击Data Source页面上的Add按钮。</p>
-<p>5.在Data Source页面的Data Source Properties部分中，在Description域中输入<br>Departmental Annual Salary。对于Sample Data File，单击Generate File列下的Generate。</p>
-<p>6.一旦生成数据源之后，会创建一个PERSONAL_DATA_PAY xml文件。单击Save按钮。</p>
-<p>7.单击PERSONAL_DATA_PAY.XML文件。会出现一个浏览器窗口，并显示文件中的xml数据。将该xml文件保存在自定义文件夹中。</p>
-<h2 id="三、创建RTF模版"><a href="#三、创建RTF模版" class="headerlink" title="三、创建RTF模版"></a>三、创建RTF模版</h2><p>将使用 Microsoft Word 插件生成 rtf 模板。使用一个名为 Personal_Data_Pay.rtf 的现成 rtf 模板文件。<br>从这里下载（<a class="link" href="http://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/bi/xmlp_ps/files/Personal_Data_Pay.rtf">http://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/bi/xmlp_ps/files/Personal_Data_Pay.rtf <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> ） 该模板，并将rtf文件保存在自定义文件下。</p>
+<p><code>1.登录到PeopleSoft Application，在左侧导航栏中展开Menu &gt; Reporting Tools &gt; BI Publisher &gt; Register BIP Data Sources。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml2.1.png" alt="xz"><br><code>2.由于您将使用PS查询，因此单击Add a New Value。选择PS Query作为Data Source类型，并单击Data Source ID的Look Up Query搜索图标。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml2.2.png" alt="xz"><br><code>3.在begins with域中输入 “P”，然后单击Lookup按钮。向下滚动找到并单击“PERSONAL_DATA_PAY”。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml2.3.png" alt="xz"><br><code>4.单击Data Source页面上的Add按钮。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml2.4.png" alt="xz"><br><code>5.在Data Source页面的Data Source Properties部分中，在Description域中输入 Departmental Annual Salary。对于Sample Data File，单击Generate File列下的Generate。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml2.5.png" alt="xz"><br><code>6.一旦生成数据源之后，会创建一个PERSONAL_DATA_PAY xml文件。单击Save按钮。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml2.6.png" alt="xz"><br><code>7.单击PERSONAL_DATA_PAY.XML文件。会出现一个浏览器窗口，并显示文件中的xml数据。将该xml文件保存在自定义文件夹中。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml2.7.png" alt="xz"></p>
+<h2 id="三、创建RTF模版"><a href="#三、创建RTF模版" class="headerlink" title="三、创建RTF模版"></a>三、创建RTF模版</h2><p>将使用 Microsoft Word 插件生成 rtf 模板。使用一个名为 Personal_Data_Pay.rtf 的现成 rtf 模板文件。<br>从这里下载（<a class="link" href="http://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/bi/xmlp_ps/files/Personal_Data_Pay.rtf">http://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/bi/xmlp_ps/files/Personal_Data_Pay.rtf <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> ） 该模板，并将rtf文件保存在自定义文件下。<br>将XML数据加载到Word模板中<br><code>1.在 Microsoft Word 中打开名为 Personal_Data_Pay.rtf 的文件。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml3.1.png" alt="xz"></p>
+<p><code>2.点击“Bl Publisher”，并选择示例XML。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml3.2.png" alt="xz"></p>
+<p><code>3.在 Please select XML data 对话框中，选择 PERSONAL_DATA_PAY.xml 文件并单击 Open。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml3.3.png" alt="xz"></p>
+<p><code>4.当出现“已成功加载数据”点击确认即可。</code><br><img lazyload src="/images/loading.svg" data-src="/images/xml3.4.png" alt="xz"></p>
 ]]></content>
       <categories>
         <category>PeoPleSoft</category>
@@ -327,17 +338,14 @@
       </tags>
   </entry>
   <entry>
-    <title>关于我的第一篇博客</title>
-    <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&#8195;&#8195;第一次遇博客还是大学的时候，当时班上有个很厉害的编程高手（至少当时那个水平对我们已经非常厉害的 ），每天都鼓捣写些网页和小程序。<br>&#8195;&#8195;直到某一天他在朋友圈发布了一个链接，介绍是他写的一篇博客，里面有很多他写的代码和记录，还有那华丽的色彩和特效深深的吸引着我，真的很酷，从那一天我就萌生写一篇博客的想法。</p>
-<h3 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h3><p>&#8195;&#8195;为什么要写博客，其实这个问题大部分人都知道自己的标准答案，就比如我，前言已经很清楚了，不过后来写着写着发生了一些变化，不再满足自己写的东西只有那么短短几篇，转化成了一种记录。<br>&#8195;&#8195;翻了一下记录，我的博客建站只有短短不到一年的时间，虽然这已经不是我的第一篇博客，但上一个因为各种原因被废弃掉了，其实总共也就一年零两个月。<br>&#8195;&#8195;记得那时作为一个初入职场的小菜鸟有许多问题、资料都要在网上查找。那时候我就发现不少答案网上已经有现成的了，而且有些大牛还有着酷炫的个人网站。</p>
-<h3 id="我适合写博客吗"><a href="#我适合写博客吗" class="headerlink" title="我适合写博客吗"></a>我适合写博客吗</h3><p>&#8195;&#8195;在搞清楚这个问题的同时，我觉得应该改成“你会坚持写博客吗？”<br>“坚持”二字从始至终都是最难的，但无妨坚持下来的都不是平平之辈。<br>&#8195;&#8195;我见识过一些博客主，突然就停更却再也没有恢复的，都是很可惜的。<br>坚持总要有一个理由，放弃同样也是。<br>· 做什么事情自己坚持的最久？<br>· 什么原因导致没有坚持下去？</p>
-]]></content>
+    <title>回顾2024</title>
+    <url>/2024/12/18/%E5%9B%9E%E9%A1%BE2024/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>年度记忆</category>
       </categories>
       <tags>
-        <tag>创建的第一个博客网站</tag>
+        <tag>回顾2024</tag>
       </tags>
   </entry>
   <entry>
@@ -417,17 +425,6 @@
       </tags>
   </entry>
   <entry>
-    <title>个人日记（小宇篇）</title>
-    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      <categories>
-        <category>记录美好</category>
-      </categories>
-      <tags>
-        <tag>记录(小宇)</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>个人日记（小雷篇）</title>
     <url>/2024/10/08/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E9%9B%B7%E6%97%A5%E9%B8%A3%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
@@ -456,6 +453,17 @@
       </categories>
       <tags>
         <tag>记录(小雷)</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人日记（小宇篇）</title>
+    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <categories>
+        <category>记录美好</category>
+      </categories>
+      <tags>
+        <tag>记录(小宇)</tag>
       </tags>
   </entry>
 </search>
