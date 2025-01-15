@@ -22,6 +22,17 @@
       </tags>
   </entry>
   <entry>
+    <title>CI（Continuous Integration)操作操作(PeoPleSoft)</title>
+    <url>/2024/12/27/PeoPleSoft_CI%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1、登录PeoPleSoft系统"><a href="#1、登录PeoPleSoft系统" class="headerlink" title="1、登录PeoPleSoft系统"></a>1、登录PeoPleSoft系统</h1>]]></content>
+      <categories>
+        <category>PeoPleSoft</category>
+      </categories>
+      <tags>
+        <tag>CI操作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客快速搭建</title>
     <url>/2024/10/22/Hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先，从Git官网 <a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a> 下载适合你操作系统的Git安装文件，然后按照提示进行安装。<br>接下来，从Node.js官网 <a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a> 下载适合你操作系统的Node.js安装文件，并按照提示进行安装。<br>安装完成后，可以在命令行窗口中通过输入”git –version” 和 “node -v”来查看Git和Node.js的版本，确保已经成功安装。</p>
@@ -294,28 +305,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PeoPleSoft第一次学习</title>
-    <url>/2024/04/16/PeoPleSoft%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      <categories>
-        <category>PeoPleSoft</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft项目创建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CI（Continuous Integration)操作操作(PeoPleSoft)</title>
-    <url>/2024/12/27/PeoPleSoft_CI%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1、登录PeoPleSoft系统"><a href="#1、登录PeoPleSoft系统" class="headerlink" title="1、登录PeoPleSoft系统"></a>1、登录PeoPleSoft系统</h1>]]></content>
-      <categories>
-        <category>PeoPleSoft</category>
-      </categories>
-      <tags>
-        <tag>CI操作</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于我的第一篇博客</title>
     <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&#8195;&#8195;第一次遇博客还是大学的时候，当时班上有个很厉害的编程高手（至少当时那个水平对我们已经非常厉害的 ），每天都鼓捣写些网页和小程序。<br>&#8195;&#8195;直到某一天他在朋友圈发布了一个链接，介绍是他写的一篇博客，里面有很多他写的代码和记录，还有那华丽的色彩和特效深深的吸引着我，真的很酷，从那一天我就萌生写一篇博客的想法。</p>
@@ -346,6 +335,17 @@
       </categories>
       <tags>
         <tag>PeopleSoft创建PDF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PeoPleSoft第一次学习</title>
+    <url>/2024/04/16/PeoPleSoft%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <categories>
+        <category>PeoPleSoft</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft项目创建</tag>
       </tags>
   </entry>
   <entry>
@@ -541,7 +541,7 @@
   <entry>
     <title>回顾2025</title>
     <url>/2025/01/03/%E5%9B%9E%E9%A1%BE2025/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&#8195;&#8195;<code>2024的最后一天</code></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&#8195;&#8195;<code>2024的最后一天，跟小雷一起看着小鞠跨年，虽然隔着660公里，但我依旧感到满足，希望将来甚至永远如此陪着她，不过更期待与你的相拥。</code></p>
 <table>
 <thead>
 <tr>
