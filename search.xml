@@ -22,6 +22,93 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo博客快速搭建</title>
+    <url>/2024/10/22/Hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先，从Git官网 <a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a> 下载适合你操作系统的Git安装文件，然后按照提示进行安装。<br>接下来，从Node.js官网 <a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a> 下载适合你操作系统的Node.js安装文件，并按照提示进行安装。<br>安装完成后，可以在命令行窗口中通过输入”git –version” 和 “node -v”来查看Git和Node.js的版本，确保已经成功安装。</p>
+<a class="button " href="https://hexo.io/zh-cn/" title="Hexo 官网">Hexo 官网</a> 可以参考主题模板以及建站常识
+<a class="button " href="https://github.com/" title="Github 官网">Github 官网</a> 可以将本地上传到服务器，此博客是以Github为平台搭建的。
+
+<p>域名部署（可以根据本人需求部署，不做要求）</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="一-Git和Nodejs的安装"><a href="#一-Git和Nodejs的安装" class="headerlink" title="一.Git和Nodejs的安装"></a>一.Git和Nodejs的安装</h3><div class="tabs" id="tab-页面内不重复的id"><ul class="nav-tabs"><li class="tab active"><a class="#页面内不重复的id-1">Git 下载安装</a></li><li class="tab"><a class="#页面内不重复的id-2">Nodejs 下载安装</a></li></ul><div class="tab-content"><div class="tab-pane active" id="页面内不重复的id-1"><p>1.点击Windows<br><img lazyload src="/images/loading.svg" data-src="/images/git1.jpg" alt="xz"><br>2、点击 64-bit Git for Windows Setup.下载 这里我电脑是64位,根据自己电脑是多少位选择<br><img lazyload src="/images/loading.svg" data-src="/images/git2.jpg" alt="xz"><br>3、点击下载好的安装包</p>
+<p><img lazyload src="/images/loading.svg" data-src="/images/git3.png" alt="xz"><br>4、点击next，直到出现install，再点击install<br><img lazyload src="/images/loading.svg" data-src="/images/git4.png" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/git4.1.png" alt="xz"><br>5.安装好后桌面鼠标右键,会多出Git GUI Here 和 Git Bash Here 两个选项 如下界面<br><img lazyload src="/images/loading.svg" data-src="/images/git5.jpg" alt="xz"><br>6.查看Git是否安装成功 打开cmd窗口(win+r输入cmd回车)输入:</p>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>git –version </p>
+
+  </div>
+若出现版本号则为安装成功。
+
+<p><img lazyload src="/images/loading.svg" data-src="/images/git6.jpg" alt="xz"></p></div><div class="tab-pane" id="页面内不重复的id-2"><p>Nodejs因为工作原因经常会切换版本，这里我推荐使用nvm，可以直接管理nodejs的安装和版本切换（建议）<br>正常情况下安装一个即可。<br>1、根据自己电脑系统及位数选择，我这里选择windows64位.msi（安装程序）格式安装包<br>此处简单说明一下.msi（安装程序）和.zip（压缩包）格式区别：<br>①.msi是Windows installer开发出来的程序安装文件，它可以让你安装，修改，卸载你所安装的程序。<br>②zip是一个压缩包，解压之后即可，不需要安装。<br><img lazyload src="/images/loading.svg" data-src="/images/node1.jpg" alt="xz"><br>2、下载完成后，双击安装包，开始安装，一直点next即可，安装路径默认在C:\Program Files下，也可以自定义修改（建议）<br><img lazyload src="/images/loading.svg" data-src="/images/node2.png" alt="xz"><br>3、待安装完成后，在电脑下方搜索框搜索【命令提示符】，然后点击以管理员身份运行<br><img lazyload src="/images/loading.svg" data-src="/images/node3.jpg" alt="xz"><br>4、输入命令验证是否安装成功<br>查询Node.js版本（若显示版本则安装成功）：</p>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>node -v </p>
+
+  </div>
+查询npm版本（若显示版本则安装成功）：
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>npm -v </p>
+
+  </div>
+
+<p><img lazyload src="/images/loading.svg" data-src="/images/node4.jpg" alt="xz"><br>5、环境配置<br>找到安装路径或自己选择的安装路径，在该路径下新建两个文件夹【node_global】和【node_cache】<br><img lazyload src="/images/loading.svg" data-src="/images/node5.jpg" alt="xz"><br>6、【Win+R】打开窗口中输入以下命令</p>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p> npm config set prefix “Node.js安装路径\node_global”<br>npm config set cache “Node.js安装路径\node_cache”</p>
+
+  </div>
+
+<p><img lazyload src="/images/loading.svg" data-src="/images/node6.jpg" alt="xz"><br>7、 在电脑下方搜索框搜索【环境变量】，然后点击打开，按照下图点击进入操作<br><img lazyload src="/images/loading.svg" data-src="/images/node7.1.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/node7.2.jpg" alt="xz"><br>点击新建<br><img lazyload src="/images/loading.svg" data-src="/images/node7.3.jpg" alt="xz"><br>8、填好变量名和变量值后点击确定</p>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p> 变量名：NODE_PATH<br>变量值：Node.js安装路径\node_global\node_modules（根据你的实际安装路径修改）</p>
+
+  </div>
+
+<p><img lazyload src="/images/loading.svg" data-src="/images/node8.jpg" alt="xz"><br>9、在上述路径下手动创建【node_modules】文件夹<br><img lazyload src="/images/loading.svg" data-src="/images/node9.jpg" alt="xz"><br>10、选中用户变量中的Path然后点击编辑<br><img lazyload src="/images/loading.svg" data-src="/images/node10.jpg" alt="xz"><br>11、修改环境变量<br>【C:\Users\xxx\AppData\Roaming\npm】修改为【Node.js安装路径\node_global】，修改完成后点击确定即可（根据你的实际安装路径修改）<br><img lazyload src="/images/loading.svg" data-src="/images/node11.jpg" alt="xz"><br>12、选中系统变量中的Path然后点击编辑<br><img lazyload src="/images/loading.svg" data-src="/images/node12.jpg" alt="xz"><br>13、新建环境变量【%NODE_PATH%】，新建完成后点击确定<br><img lazyload src="/images/loading.svg" data-src="/images/node13.jpg" alt="xz"><br>14、一直点击确定即可<br><img lazyload src="/images/loading.svg" data-src="/images/node14.1.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/node14.2.jpg" alt="xz"><br>15、再次【Win+R】打开窗口中输入以下命令</p>
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>npm install express -g </p>
+
+  </div>
+出现以下内容则表示配置成功
+
+<p><img lazyload src="/images/loading.svg" data-src="/images/node15.jpg" alt="xz"></p></div></div></div>
+
+<h3 id="二-hexo的安装"><a href="#二-hexo的安装" class="headerlink" title="二.hexo的安装"></a>二.hexo的安装</h3><p>1、本地搭建 hexo 静态博客：创建一个新的本地Hexo仓库， 在自己想要的目录新建一文件夹，文件夹自定义<br>我这里是在D:\blog_zhangxz\hexoblog文件夹下右键，选择Git Bash Here。<br><img lazyload src="/images/loading.svg" data-src="/images/hexo1.0.png" alt="xz"><br>2、依次输入以下命令</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>hexo init myBlog </p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>cd myBlog </p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>npm install </p>
+
+  </div>
+
+<p><img lazyload src="/images/loading.svg" data-src="/images/hexo1.1.png" alt="xz"><br>输入第三条命令“npm install”，可能会出现以下提示，此时输入该命令“git init“再次输入主题安装命令“npm install”即可</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>added 2 packages in 1s<br>24 packages are looking for funding<br>run ‘npm fund’ for details</p>
+
+  </div>
+
+<p><img lazyload src="/images/loading.svg" data-src="/images/hexo1.2.png" alt="xz"><br>3、以上命令会创建一个名为”myBlog”的文件夹，并在其中初始化Hexo仓库，然后安装所需的依赖包。<br><img lazyload src="/images/loading.svg" data-src="/images/hexo1.3.png" alt="xz"><br>4、安装完成后，可以通过输入”hexo version”来检查Hexo的版本。<br><img lazyload src="/images/loading.svg" data-src="/images/hexo1.4.png" alt="xz"><br>5、通过命令安装主题（主题有很多模板，可自行搜索）：</p>
+
+  <div class="note p-4 mb-4 rounded-small default">
+    <p>git submodule add “仓库地址” 或 npm i “主题名称”</p>
+
+  </div>
+<h3 id="三-部署项目到Github远程仓库"><a href="#三-部署项目到Github远程仓库" class="headerlink" title="三.部署项目到Github远程仓库"></a>三.部署项目到Github远程仓库</h3>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo博客搭建速成</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客基本功能</title>
     <url>/2024/03/29/Hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="一、博客文本基本参考"><a href="#一、博客文本基本参考" class="headerlink" title="一、博客文本基本参考"></a>一、博客文本基本参考</h2><h3 id="Notes-笔记模块"><a href="#Notes-笔记模块" class="headerlink" title="Notes 笔记模块"></a>Notes 笔记模块</h3><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>大号提示块 </summary>
@@ -207,90 +294,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客快速搭建</title>
-    <url>/2024/10/22/Hexo%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先，从Git官网 <a class="button " href="https://git-scm.com/downloads" title="Git 官网">Git 官网</a> 下载适合你操作系统的Git安装文件，然后按照提示进行安装。<br>接下来，从Node.js官网 <a class="button " href="https://nodejs.org/en" title="Node.js 官网">Node.js 官网</a> 下载适合你操作系统的Node.js安装文件，并按照提示进行安装。<br>安装完成后，可以在命令行窗口中通过输入”git –version” 和 “node -v”来查看Git和Node.js的版本，确保已经成功安装。</p>
-<a class="button " href="https://hexo.io/zh-cn/" title="Hexo 官网">Hexo 官网</a> 可以参考主题模板以及建站常识
-<a class="button " href="https://github.com/" title="Github 官网">Github 官网</a> 可以将本地上传到服务器，此博客是以Github为平台搭建的。
-
-<p>域名部署（可以根据本人需求部署，不做要求）</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="一-Git和Nodejs的安装"><a href="#一-Git和Nodejs的安装" class="headerlink" title="一.Git和Nodejs的安装"></a>一.Git和Nodejs的安装</h3><div class="tabs" id="tab-页面内不重复的id"><ul class="nav-tabs"><li class="tab active"><a class="#页面内不重复的id-1">Git 下载安装</a></li><li class="tab"><a class="#页面内不重复的id-2">Nodejs 下载安装</a></li></ul><div class="tab-content"><div class="tab-pane active" id="页面内不重复的id-1"><p>1.点击Windows<br><img lazyload src="/images/loading.svg" data-src="/images/git1.jpg" alt="xz"><br>2、点击 64-bit Git for Windows Setup.下载 这里我电脑是64位,根据自己电脑是多少位选择<br><img lazyload src="/images/loading.svg" data-src="/images/git2.jpg" alt="xz"><br>3、点击下载好的安装包</p>
-<p><img lazyload src="/images/loading.svg" data-src="/images/git3.png" alt="xz"><br>4、点击next，直到出现install，再点击install<br><img lazyload src="/images/loading.svg" data-src="/images/git4.png" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/git4.1.png" alt="xz"><br>5.安装好后桌面鼠标右键,会多出Git GUI Here 和 Git Bash Here 两个选项 如下界面<br><img lazyload src="/images/loading.svg" data-src="/images/git5.jpg" alt="xz"><br>6.查看Git是否安装成功 打开cmd窗口(win+r输入cmd回车)输入:</p>
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>git –version </p>
-
-  </div>
-若出现版本号则为安装成功。
-
-<p><img lazyload src="/images/loading.svg" data-src="/images/git6.jpg" alt="xz"></p></div><div class="tab-pane" id="页面内不重复的id-2"><p>Nodejs因为工作原因经常会切换版本，这里我推荐使用nvm，可以直接管理nodejs的安装和版本切换（建议）<br>正常情况下安装一个即可。<br>1、根据自己电脑系统及位数选择，我这里选择windows64位.msi（安装程序）格式安装包<br>此处简单说明一下.msi（安装程序）和.zip（压缩包）格式区别：<br>①.msi是Windows installer开发出来的程序安装文件，它可以让你安装，修改，卸载你所安装的程序。<br>②zip是一个压缩包，解压之后即可，不需要安装。<br><img lazyload src="/images/loading.svg" data-src="/images/node1.jpg" alt="xz"><br>2、下载完成后，双击安装包，开始安装，一直点next即可，安装路径默认在C:\Program Files下，也可以自定义修改（建议）<br><img lazyload src="/images/loading.svg" data-src="/images/node2.png" alt="xz"><br>3、待安装完成后，在电脑下方搜索框搜索【命令提示符】，然后点击以管理员身份运行<br><img lazyload src="/images/loading.svg" data-src="/images/node3.jpg" alt="xz"><br>4、输入命令验证是否安装成功<br>查询Node.js版本（若显示版本则安装成功）：</p>
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>node -v </p>
-
-  </div>
-查询npm版本（若显示版本则安装成功）：
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>npm -v </p>
-
-  </div>
-
-<p><img lazyload src="/images/loading.svg" data-src="/images/node4.jpg" alt="xz"><br>5、环境配置<br>找到安装路径或自己选择的安装路径，在该路径下新建两个文件夹【node_global】和【node_cache】<br><img lazyload src="/images/loading.svg" data-src="/images/node5.jpg" alt="xz"><br>6、【Win+R】打开窗口中输入以下命令</p>
-  <div class="note p-4 mb-4 rounded-small default">
-    <p> npm config set prefix “Node.js安装路径\node_global”<br>npm config set cache “Node.js安装路径\node_cache”</p>
-
-  </div>
-
-<p><img lazyload src="/images/loading.svg" data-src="/images/node6.jpg" alt="xz"><br>7、 在电脑下方搜索框搜索【环境变量】，然后点击打开，按照下图点击进入操作<br><img lazyload src="/images/loading.svg" data-src="/images/node7.1.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/node7.2.jpg" alt="xz"><br>点击新建<br><img lazyload src="/images/loading.svg" data-src="/images/node7.3.jpg" alt="xz"><br>8、填好变量名和变量值后点击确定</p>
-  <div class="note p-4 mb-4 rounded-small default">
-    <p> 变量名：NODE_PATH<br>变量值：Node.js安装路径\node_global\node_modules（根据你的实际安装路径修改）</p>
-
-  </div>
-
-<p><img lazyload src="/images/loading.svg" data-src="/images/node8.jpg" alt="xz"><br>9、在上述路径下手动创建【node_modules】文件夹<br><img lazyload src="/images/loading.svg" data-src="/images/node9.jpg" alt="xz"><br>10、选中用户变量中的Path然后点击编辑<br><img lazyload src="/images/loading.svg" data-src="/images/node10.jpg" alt="xz"><br>11、修改环境变量<br>【C:\Users\xxx\AppData\Roaming\npm】修改为【Node.js安装路径\node_global】，修改完成后点击确定即可（根据你的实际安装路径修改）<br><img lazyload src="/images/loading.svg" data-src="/images/node11.jpg" alt="xz"><br>12、选中系统变量中的Path然后点击编辑<br><img lazyload src="/images/loading.svg" data-src="/images/node12.jpg" alt="xz"><br>13、新建环境变量【%NODE_PATH%】，新建完成后点击确定<br><img lazyload src="/images/loading.svg" data-src="/images/node13.jpg" alt="xz"><br>14、一直点击确定即可<br><img lazyload src="/images/loading.svg" data-src="/images/node14.1.jpg" alt="xz"><img lazyload src="/images/loading.svg" data-src="/images/node14.2.jpg" alt="xz"><br>15、再次【Win+R】打开窗口中输入以下命令</p>
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>npm install express -g </p>
-
-  </div>
-出现以下内容则表示配置成功
-
-<p><img lazyload src="/images/loading.svg" data-src="/images/node15.jpg" alt="xz"></p></div></div></div>
-
-<h3 id="二-hexo的安装"><a href="#二-hexo的安装" class="headerlink" title="二.hexo的安装"></a>二.hexo的安装</h3><p>1、本地搭建 hexo 静态博客：创建一个新的本地Hexo仓库， 在自己想要的目录新建一文件夹，文件夹自定义<br>我这里是在D:\blog_zhangxz\hexoblog文件夹下右键，选择Git Bash Here。<br><img lazyload src="/images/loading.svg" data-src="/images/hexo1.0.png" alt="xz"><br>2、依次输入以下命令</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>hexo init myBlog </p>
-
-  </div>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>cd myBlog </p>
-
-  </div>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>npm install </p>
-
-  </div>
-
-<p><img lazyload src="/images/loading.svg" data-src="/images/hexo1.1.png" alt="xz"><br>输入第三条命令“npm install”，可能会出现以下提示，此时输入该命令“git init“再次输入主题安装命令“npm install”即可</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>added 2 packages in 1s<br>24 packages are looking for funding<br>run ‘npm fund’ for details</p>
-
-  </div>
-
-<p><img lazyload src="/images/loading.svg" data-src="/images/hexo1.2.png" alt="xz"><br>3、以上命令会创建一个名为”myBlog”的文件夹，并在其中初始化Hexo仓库，然后安装所需的依赖包。<br><img lazyload src="/images/loading.svg" data-src="/images/hexo1.3.png" alt="xz"><br>4、安装完成后，可以通过输入”hexo version”来检查Hexo的版本。<br><img lazyload src="/images/loading.svg" data-src="/images/hexo1.4.png" alt="xz"><br>5、通过命令安装主题（主题有很多模板，可自行搜索）：</p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>git submodule add “仓库地址” 或 npm i “主题名称”</p>
-
-  </div>
-<h3 id="三-部署项目到Github远程仓库"><a href="#三-部署项目到Github远程仓库" class="headerlink" title="三.部署项目到Github远程仓库"></a>三.部署项目到Github远程仓库</h3>]]></content>
+    <title>PeoPleSoft第一次学习</title>
+    <url>/2024/04/16/PeoPleSoft%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>PeoPleSoft</category>
       </categories>
       <tags>
-        <tag>Hexo博客搭建速成</tag>
+        <tag>PeopleSoft项目创建</tag>
       </tags>
   </entry>
   <entry>
@@ -305,14 +316,17 @@
       </tags>
   </entry>
   <entry>
-    <title>PeoPleSoft第一次学习</title>
-    <url>/2024/04/16/PeoPleSoft%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <title>关于我的第一篇博客</title>
+    <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&#8195;&#8195;第一次遇博客还是大学的时候，当时班上有个很厉害的编程高手（至少当时那个水平对我们已经非常厉害的 ），每天都鼓捣写些网页和小程序。<br>&#8195;&#8195;直到某一天他在朋友圈发布了一个链接，介绍是他写的一篇博客，里面有很多他写的代码和记录，还有那华丽的色彩和特效深深的吸引着我，真的很酷，从那一天我就萌生写一篇博客的想法。</p>
+<h3 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h3><p>&#8195;&#8195;为什么要写博客，其实这个问题大部分人都知道自己的标准答案，就比如我，前言已经很清楚了，不过后来写着写着发生了一些变化，不再满足自己写的东西只有那么短短几篇，转化成了一种记录。<br>&#8195;&#8195;翻了一下记录，我的博客建站只有短短不到一年的时间，虽然这已经不是我的第一篇博客，但上一个因为各种原因被废弃掉了，其实总共也就一年零两个月。<br>&#8195;&#8195;记得那时作为一个初入职场的小菜鸟有许多问题、资料都要在网上查找。那时候我就发现不少答案网上已经有现成的了，而且有些大牛还有着酷炫的个人网站。</p>
+<h3 id="我适合写博客吗"><a href="#我适合写博客吗" class="headerlink" title="我适合写博客吗"></a>我适合写博客吗</h3><p>&#8195;&#8195;在搞清楚这个问题的同时，我觉得应该改成“你会坚持写博客吗？”<br>“坚持”二字从始至终都是最难的，但无妨坚持下来的都不是平平之辈。<br>&#8195;&#8195;我见识过一些博客主，突然就停更却再也没有恢复的，都是很可惜的。<br>坚持总要有一个理由，放弃同样也是。<br>· 做什么事情自己坚持的最久？<br>· 什么原因导致没有坚持下去？</p>
+]]></content>
       <categories>
-        <category>PeoPleSoft</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>PeopleSoft项目创建</tag>
+        <tag>创建的第一个博客网站</tag>
       </tags>
   </entry>
   <entry>
@@ -332,20 +346,6 @@
       </categories>
       <tags>
         <tag>PeopleSoft创建PDF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于我的第一篇博客</title>
-    <url>/2024/01/22/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&#8195;&#8195;第一次遇博客还是大学的时候，当时班上有个很厉害的编程高手（至少当时那个水平对我们已经非常厉害的 ），每天都鼓捣写些网页和小程序。<br>&#8195;&#8195;直到某一天他在朋友圈发布了一个链接，介绍是他写的一篇博客，里面有很多他写的代码和记录，还有那华丽的色彩和特效深深的吸引着我，真的很酷，从那一天我就萌生写一篇博客的想法。</p>
-<h3 id="为什么要写博客"><a href="#为什么要写博客" class="headerlink" title="为什么要写博客"></a>为什么要写博客</h3><p>&#8195;&#8195;为什么要写博客，其实这个问题大部分人都知道自己的标准答案，就比如我，前言已经很清楚了，不过后来写着写着发生了一些变化，不再满足自己写的东西只有那么短短几篇，转化成了一种记录。<br>&#8195;&#8195;翻了一下记录，我的博客建站只有短短不到一年的时间，虽然这已经不是我的第一篇博客，但上一个因为各种原因被废弃掉了，其实总共也就一年零两个月。<br>&#8195;&#8195;记得那时作为一个初入职场的小菜鸟有许多问题、资料都要在网上查找。那时候我就发现不少答案网上已经有现成的了，而且有些大牛还有着酷炫的个人网站。</p>
-<h3 id="我适合写博客吗"><a href="#我适合写博客吗" class="headerlink" title="我适合写博客吗"></a>我适合写博客吗</h3><p>&#8195;&#8195;在搞清楚这个问题的同时，我觉得应该改成“你会坚持写博客吗？”<br>“坚持”二字从始至终都是最难的，但无妨坚持下来的都不是平平之辈。<br>&#8195;&#8195;我见识过一些博客主，突然就停更却再也没有恢复的，都是很可惜的。<br>坚持总要有一个理由，放弃同样也是。<br>· 做什么事情自己坚持的最久？<br>· 什么原因导致没有坚持下去？</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>创建的第一个博客网站</tag>
       </tags>
   </entry>
   <entry>
@@ -561,6 +561,17 @@
       </tags>
   </entry>
   <entry>
+    <title>个人日记（小宇篇）</title>
+    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      <categories>
+        <category>记录美好</category>
+      </categories>
+      <tags>
+        <tag>记录(小宇)</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>个人日记（小雷篇）</title>
     <url>/2024/10/08/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E9%9B%B7%E6%97%A5%E9%B8%A3%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
@@ -589,17 +600,6 @@
       </categories>
       <tags>
         <tag>记录(小雷)</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>个人日记（小宇篇）</title>
-    <url>/2024/10/22/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%88%E5%BC%A0%E5%AE%87%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      <categories>
-        <category>记录美好</category>
-      </categories>
-      <tags>
-        <tag>记录(小宇)</tag>
       </tags>
   </entry>
 </search>
